@@ -13,21 +13,21 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 ## Repository contents
 
 ```text
-├── examples/                         # (Reserved) Examples of PMS-based analyses or code
+├── examples/                                 # (Reserved) Examples of PMS-based analyses or code
 ├── img/
-│   ├── figure_01.png                 # Figures used in the paper / model spec
+│   ├── figure_01.png                         # Figures used in the paper / model spec
 │   ├── figure_02.png
 │   ├── figure_03.png
 │   ├── figure_04.png
 │   └── figure_05.png
 ├── model/
-│   ├── Model Specification.html      # Human-readable PMS model specification
-│   ├── Model Specification.pdf       # PDF version of the specification
-│   └── PMS.yaml                      # Canonical PMS model file (schema_version: "PMS_1.1")
+│   ├── Model Specification.html              # Human-readable PMS model specification
+│   ├── Model Specification.pdf               # PDF version of the specification
+│   └── PMS.yaml                              # Canonical PMS model file (schema_version: "PMS_1.1")
 ├── Praxeological Meta-Structure Theory.html  # HTML export of the theoretical paper
 ├── Praxeological Meta-Structure Theory.md    # Markdown export of the theoretical paper
-├── Towards a Praxeological Meta-Structure Theory.pdf  # Main theoretical paper (PDF)
-└── README.md                         # This file
+├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper (PDF)
+└── README.md                                 # This file
 ````
 
 ### Core artefacts
@@ -202,3 +202,4 @@ Unless otherwise stated on the distribution page, the YAML file and this model s
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
+
