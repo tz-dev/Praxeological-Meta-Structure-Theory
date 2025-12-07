@@ -21,7 +21,7 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 │   ├── figure_04.png
 │   └── figure_05.png
 ├── license/
-│   └── CC-BY-NC-SA-4.0.txt                   # license
+│   └── CC-BY-NC-SA-4.0.txt                   # License
 ├── model/
 │   ├── Model Specification.html              # Human-readable PMS model specification
 │   ├── Model Specification.pdf               # PDF version of the specification
@@ -204,5 +204,6 @@ Unless otherwise stated on the distribution page, the YAML file and this model s
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
+
 
 
