@@ -1,83 +1,84 @@
-# Towards a Praxeological Meta-Structure Theory  
+# Towards a Praxeological Meta-Structure Theory
+
 ## A Unified Generative Framework of Action, Asymmetry, Recontextualization, and Self
 
-**Author:**  
-T. Zöller  
+**Author:**
+T. Zöller
 
-**Draft Version:** 1.0  
-**Date:** 2025-12-07  
+**Draft Version:** 1.0
+**Date:** 2025-12-07
 
 ---
 
 # Table of Contents
 
-0. Abstract  
-1. Introduction  
-   1.1 Motivation  
-   1.2 Problem Statement  
-   1.3 Contribution  
-   1.4 Scope and Delimitation  
-2. Related Work  
-   2.1 Kant’s Categories  
-   2.2 Luhmann’s System/Environment Distinction  
-   2.3 Bateson’s Meta-Learning and Difference  
-   2.4 Piaget’s Developmental Structures  
-   2.5 Lakoff & Johnson: Conceptual Spaces  
-   2.6 Active Inference and Predictive Processing  
-   2.7 Why These Approaches Are Not Generative or Operational  
-3. Foundations of Praxeological Structure  
-   3.1 The Concept of Praxis  
-   3.2 Why Action Is a Structural Phenomenon  
-   3.3 Why a Meta-Grammar Is Necessary  
-4. The Eleven Meta-Axioms of Structure (Δ–Ψ)  
-   4.1 Axiom 1 — Δ (Difference)  
-   4.2 Axiom 2 — ∇ (Impulse)  
-   4.3 Axiom 3 — □ (Frame)  
-   4.4 Axiom 4 — Λ (Non-Event)  
-   4.5 Axiom 5 — Α (Attractor)  
-   4.6 Axiom 6 — Ω (Asymmetry)  
-   4.7 Axiom 7 — Θ (Temporality)  
-   4.8 Axiom 8 — Φ (Recontextualization)  
-   4.9 Axiom 9 — Χ (Distance)  
-   4.10 Axiom 10 — Σ (Integration)  
-   4.11 Axiom 11 — Ψ (Self-Binding)  
-   4.12 Why the Order Is Logically Necessary (Summary Table)  
-5. Generative Composition: From Axioms to Structured Praxis  
-   5.1 Operator Composition (Δ→∇→□→…)  
-   5.2 Emergence of Patterns (Α)  
-   5.3 Emergence of Asymmetries (Ω)  
-   5.4 Temporal Consolidation (Θ)  
-   5.5 Developmental Jumps via Φ  
-   5.6 Reflexivity (Χ + Σ)  
-   5.7 Self-Modeling (Ψ as Fixpoint)  
-6. Application I: Derivation of the PA Model  
-   6.1 Awareness (B) from Δ, □, Θ  
-   6.2 Coherence (K) from ∇, □, Λ, Θ  
-   6.3 Responsibility (V) from Ω, Θ, Φ, Ψ  
-   6.4 Action (H) from ∇, Θ, Σ  
-   6.5 Dignity-in-Practice (D) from Ω, Χ, Ψ  
-   6.6 IA-Forms from Ω + Α + Φ  
-7. Formal Specification (Optional YAML Section)  
-   7.1 Meta-Axioms in YAML  
-   7.2 Operator Composition in YAML  
+0. Abstract
+1. Introduction
+   1.1 Motivation
+   1.2 Problem Statement
+   1.3 Contribution
+   1.4 Scope and Delimitation
+2. Related Work
+   2.1 Kant’s Categories
+   2.2 Luhmann’s System/Environment Distinction
+   2.3 Bateson’s Meta-Learning and Difference
+   2.4 Piaget’s Developmental Structures
+   2.5 Lakoff & Johnson: Conceptual Spaces
+   2.6 Active Inference and Predictive Processing
+   2.7 Why These Approaches Are Not Generative or Operational
+3. Foundations of Praxeological Structure
+   3.1 The Concept of Praxis
+   3.2 Why Action Is a Structural Phenomenon
+   3.3 Why a Meta-Grammar Is Necessary
+4. The Eleven Meta-Axioms of Structure (Δ–Ψ)
+   4.1 Axiom 1 — Δ (Difference)
+   4.2 Axiom 2 — ∇ (Impulse)
+   4.3 Axiom 3 — □ (Frame)
+   4.4 Axiom 4 — Λ (Non-Event)
+   4.5 Axiom 5 — Α (Attractor)
+   4.6 Axiom 6 — Ω (Asymmetry)
+   4.7 Axiom 7 — Θ (Temporality)
+   4.8 Axiom 8 — Φ (Recontextualization)
+   4.9 Axiom 9 — Χ (Distance)
+   4.10 Axiom 10 — Σ (Integration)
+   4.11 Axiom 11 — Ψ (Self-Binding)
+   4.12 Why the Order Is Logically Necessary (Summary Table)
+5. Generative Composition: From Axioms to Structured Praxis
+   5.1 Operator Composition (Δ→∇→□→…)
+   5.2 Emergence of Patterns (Α)
+   5.3 Emergence of Asymmetries (Ω)
+   5.4 Temporal Consolidation (Θ)
+   5.5 Developmental Jumps via Φ
+   5.6 Reflexivity (Χ + Σ)
+   5.7 Self-Modeling (Ψ as Fixpoint)
+6. Application I: Derivation of the PA Model
+   6.1 Awareness (A) from Δ, □, Θ
+   6.2 Coherence (C) from ∇, □, Λ, Θ
+   6.3 Responsibility (R) from Ω, Θ, Φ, Ψ
+   6.4 Action (E) from ∇, Θ, Σ
+   6.5 Dignity-in-Practice (D) from Ω, Χ, Ψ
+   6.6 IA-Forms from Ω + Α + Φ
+7. Formal Specification (Optional YAML Section)
+   7.1 Meta-Axioms in YAML
+   7.2 Operator Composition in YAML
    7.3 Mapping to Praxeological Anthropology
-8. Discussion  
-   8.1 Consequences for Action Theory  
-   8.2 Consequences for AI Development  
-   8.3 Consequences for Maturity and Responsibility  
-   8.4 Differences to Existing Structural Theories  
-   8.5 Limitations and Future Work  
-9. Conclusion  
-10. Appendix  
-   10.1 Additional Mini-Examples of Operator Use  
-   10.2 Sketches of Formal Derivations  
-      10.2.1 Awareness (B)  
-      10.2.2 Coherence (K)  
-      10.2.3 Responsibility (V)  
-      10.2.4 Action (H)  
-      10.2.5 Dignity-in-Practice (D)  
-      10.2.6 IA-B≫H (Excessive Distance between Awareness and Action)  
-   10.3 Glossary of Meta-Axioms (Δ–Ψ)  
+8. Discussion
+   8.1 Consequences for Action Theory
+   8.2 Consequences for AI Development
+   8.3 Consequences for Maturity and Responsibility
+   8.4 Differences to Existing Structural Theories
+   8.5 Limitations and Future Work
+9. Conclusion
+10. Appendix
+    10.1 Additional Mini-Examples of Operator Use
+    10.2 Sketches of Formal Derivations
+    10.2.1 Awareness (A)
+    10.2.2 Coherence (C)
+    10.2.3 Responsibility (R)
+    10.2.4 Action (E)
+    10.2.5 Dignity-in-Practice (D)
+    10.2.6 IA-A≫E (Excessive Distance between Awareness and Action)
+    10.3 Glossary of Meta-Axioms (Δ–Ψ)
 
 ---
 
@@ -134,8 +135,8 @@ The paper thus establishes a new structural foundation upon which concrete actio
 
 ## 1.4 Scope and Delimitation
 
-This work is intentionally **non-physical**, **non-metaphysical**, and **non-psychological**.  
-It does not attempt to explain neural mechanisms, subjective experience, or moral valuation.  
+This work is intentionally **non-physical**, **non-metaphysical**, and **non-psychological**.
+It does not attempt to explain neural mechanisms, subjective experience, or moral valuation.
 Instead, it provides a **praxeological and structural** foundation: a meta-grammar of the forms that make action, responsibility, asymmetry, and selfhood possible in any agentic system.
 
 The scope is confined to:
@@ -1182,184 +1183,185 @@ it binds the system to its own structures, enabling:
 
 ---
 
-# 6. Application I: Derivation of the PA Model
+# 6. Application I: Derived Structural Constructs
 
-The PA model (Awareness, Coherence, Responsibility, Action, Dignity-in-Practice) is not an empirical construct but a **direct derivation** of the eleven meta-axioms (Δ–Ψ). Each PA dimension corresponds to a specific operator constellation that governs how praxis becomes intelligible, coherent, accountable, and normatively grounded.
+The five structural axes **Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice** are not empirical or ad hoc constructs, but **direct derivations** of the eleven meta-axioms (Δ–Ψ).
+Each axis corresponds to a specific operator constellation that governs how praxis becomes intelligible, coherent, accountable, and normatively constrained.
 
-![Figure 3. Derivation of the PA Model from Meta-Axioms](img/figure_03.png)
+![Figure 3. Derivation of the Structural Axes from Meta-Axioms](img/figure_03.png)
 
-*Figure 3. Operator-level derivation of the five PA axes (B, K, V, H, D) from the Δ–Ψ grammar.*
+*Figure 3. Operator-level derivation of the five axes (A, C, R, E, D) from the Δ–Ψ grammar.*
 
-This section demonstrates the derivation of the first three axes: Awareness (B), Coherence (K), and Responsibility (V). These are not designed features; they follow necessarily from the deep grammar of praxis.
+This section demonstrates the derivation of the five axes: Awareness (A), Coherence (C), Responsibility (R), Action (E), and Dignity-in-Practice (D). These are not designed features; they follow necessarily from the deep grammar of praxis.
 
 ---
 
-## 6.1 Awareness (B) from Δ, □, Θ
+## 6.1 Awareness (A) from Δ, □, Θ
 
-Awareness is the capacity to differentiate, frame, and maintain situational structure across time.  
+Awareness is the capacity to differentiate, frame, and maintain situational structure across time.
 It emerges from the combined action of Δ (Difference), □ (Frame), and Θ (Temporality).
 
 ### **Generative Basis**
 
-```
-
-B = Θ ∘ □ ∘ Δ
-
+```text
+A = Θ ∘ □ ∘ Δ
 ```
 
 ### **How the Operators Generate Awareness**
 
-1. **Δ (Difference)**  
+1. **Δ (Difference)**
    Awareness begins with distinguishing elements of the environment: self/other, object/context, signal/noise.
 
-2. **□ (Frame)**  
+2. **□ (Frame)**
    Frames stabilize distinctions by placing them in a structured context. Awareness is not mere perception; it is *framed* differentiation (e.g., “this is relevant,” “this is part of the problem”).
 
-3. **Θ (Temporality)**  
+3. **Θ (Temporality)**
    Awareness requires temporal persistence. The agent does not simply notice; it *maintains* the distinction over time.
 
 ### **Outcome**
+
 Awareness is the system’s capacity to:
 
-- recognize relevant distinctions,  
-- frame them coherently,  
-- and sustain them as part of its temporal horizon.
+* recognize relevant distinctions,
+* frame them coherently,
+* and sustain them as part of its temporal horizon.
 
 ### **Praxeological Example**
-A person can distinguish (Δ) that someone is upset, understand the context (□), and track how this emotional state evolves across the interaction (Θ).  
+
+A person can distinguish (Δ) that someone is upset, understand the context (□), and track how this emotional state evolves across the interaction (Θ).
 This is not raw perception — it is **praxeological awareness**.
 
 ---
 
-## 6.2 Coherence (K) from ∇, □, Λ, Θ
+## 6.2 Coherence (C) from ∇, □, Λ, Θ
 
 Coherence is the capacity to form structured, interpretable, and temporally stable action trajectories. It arises not from intention but from the interplay of ∇ (Impulse), □ (Frame), Λ (Non-Event), and Θ (Temporality).
 
 ### **Generative Basis**
 
-```
-
-K = Θ ∘ Λ ∘ □ ∘ ∇
-
+```text
+C = Θ ∘ Λ ∘ □ ∘ ∇
 ```
 
 ### **How the Operators Generate Coherence**
 
-1. **∇ (Impulse)**  
+1. **∇ (Impulse)**
    Coherence begins with directed impulse — a drive or orientation.
 
-2. **□ (Frame)**  
+2. **□ (Frame)**
    The frame constrains the impulse, preventing chaotic or contradictory action.
 
-3. **Λ (Non-Event)**  
-   Coherence requires the recognition of *what does not happen*.  
+3. **Λ (Non-Event)**
+   Coherence requires the recognition of *what does not happen*.
    Goals, expectations, delays, and silences structure the coherence of action.
 
-4. **Θ (Temporality)**  
+4. **Θ (Temporality)**
    Coherence is inherently temporal: it is the narrative stability of action over time.
 
 ### **Outcome**
+
 Coherence is:
 
-- the alignment of impulses with frames,  
-- the interpretation of absences as meaningful,  
-- and the temporal stabilization of action into intelligible sequences.
+* the alignment of impulses with frames,
+* the interpretation of absences as meaningful,
+* and the temporal stabilization of action into intelligible sequences.
 
 ### **Praxeological Example**
+
 A person attempting to reconcile after conflict generates coherence when their impulse (∇) is framed (□) by the context of the relationship, shaped by the silence or absence of reciprocation (Λ), and sustained consistently over time (Θ).
 
 Coherence is not perfection — it is **integrated directedness**.
 
 ---
 
-## 6.3 Responsibility (V) from Ω, Θ, Φ, Ψ
+## 6.3 Responsibility (R) from Ω, Θ, Φ, Ψ
 
 Responsibility is the structural capacity to recognize, assume, and act within asymmetrical role relations. It is not a moral property but a **praxeological function** emerging from Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), and Ψ (Self-Binding).
 
 ### **Generative Basis**
 
-```
-
-V = Ψ ∘ Φ ∘ Θ ∘ Ω
-
+```text
+R = Ψ ∘ Φ ∘ Θ ∘ Ω
 ```
 
 ### **How the Operators Generate Responsibility**
 
-1. **Ω (Asymmetry)**  
+1. **Ω (Asymmetry)**
    Responsibility begins with structural imbalance: one party is more exposed, capable, informed, or obligated than another. Ω establishes the *direction* of responsibility.
 
-2. **Θ (Temporality)**  
-   Responsibility extends across time: it concerns what one *owes*, *promised*, or *is expected to maintain*.  
+2. **Θ (Temporality)**
+   Responsibility extends across time: it concerns what one *owes*, *promised*, or *is expected to maintain*.
    Without duration, no responsibility can exist.
 
-3. **Φ (Recontextualization)**  
-   Responsibility requires the ability to reinterpret a situation:  
+3. **Φ (Recontextualization)**
+   Responsibility requires the ability to reinterpret a situation:
    to understand shifting needs, renegotiate obligations, adjust to failures, and integrate new contexts.
 
-4. **Ψ (Self-Binding)**  
-   Responsibility becomes internalized and stable only when integrated into one’s self-model.  
-   The system binds itself to the asymmetry:  
+4. **Ψ (Self-Binding)**
+   Responsibility becomes internalized and stable only when integrated into one’s self-model.
+   The system binds itself to the asymmetry:
    **“I am the one who must act here.”**
 
 ### **Outcome**
+
 Responsibility is:
 
-- structurally grounded (Ω),  
-- temporally extended (Θ),  
-- interpretively adaptive (Φ),  
-- and self-binding (Ψ).
+* structurally grounded (Ω),
+* temporally extended (Θ),
+* interpretively adaptive (Φ),
+* and self-binding (Ψ).
 
 It is a **generative, not moralistic**, concept.
 
 ### **Praxeological Example**
-A caregiver recognizes asymmetry (Ω), maintains care across time (Θ), reframes challenges and setbacks (Φ), and binds this role into their self-understanding (Ψ).  
+
+A caregiver recognizes asymmetry (Ω), maintains care across time (Θ), reframes challenges and setbacks (Φ), and binds this role into their self-understanding (Ψ).
 Thus responsibility is enacted, not idealized.
 
 ---
 
-## 6.4 Action (H) from ∇, Θ, Σ
+## 6.4 Action (E) from ∇, Θ, Σ
 
-Action (H) is not mere behavior; it is the **integrated realization of directedness across time**.  
-In the PA model, H reflects the capacity to transform impulses into coherent, temporally extended, and contextually appropriate praxis.  
+Action (E), understood as enactment, is not mere behavior; it is the **integrated realization of directedness across time**.
+In this framework, E reflects the capacity to transform impulses into coherent, temporally extended, and contextually appropriate praxis.
 This emerges from ∇ (Impulse), Θ (Temporality), and Σ (Integration).
 
 ### **Generative Basis**
 
-```
-
-H = Σ ∘ Θ ∘ ∇
-
+```text
+E = Σ ∘ Θ ∘ ∇
 ```
 
 ### **How the Operators Generate Action**
 
-1. **∇ (Impulse)**  
+1. **∇ (Impulse)**
    Action originates with directional energetic activation—a “push” produced by difference.
 
-2. **Θ (Temporality)**  
-   Temporal structuring determines whether impulses become sustained activity rather than momentary reactions.  
+2. **Θ (Temporality)**
+   Temporal structuring determines whether impulses become sustained activity rather than momentary reactions.
    Θ transforms impulse into trajectory.
 
-3. **Σ (Integration)**  
-   Action becomes coherent only when impulses, contexts, and conflicting tendencies are integrated into a unified course of conduct.  
+3. **Σ (Integration)**
+   Action becomes coherent only when impulses, contexts, and conflicting tendencies are integrated into a unified course of conduct.
    Σ resolves tension and aligns competing motivators.
 
 ### **Outcome**
-Action (H) is the **integrative enactment** of:
 
-- directed energy (∇),  
-- temporal persistence (Θ),  
-- and coherent synthesis (Σ).
+Action (E) is the **integrative enactment** of:
+
+* directed energy (∇),
+* temporal persistence (Θ),
+* and coherent synthesis (Σ).
 
 It is the highest non-self-referential performance of the system.
 
 ### **Praxeological Example**
-A person deciding to repair a relationship acts (H) when:
 
-- the impulse to reconcile emerges (∇),  
-- is maintained despite setbacks (Θ),  
-- and is integrated with emotional, normative, and contextual constraints (Σ).
+A person deciding to repair a relationship acts (E) when:
+
+* the impulse to reconcile emerges (∇),
+* is maintained despite setbacks (Θ),
+* and is integrated with emotional, normative, and contextual constraints (Σ).
 
 Action is not reaction; it is **integrated, temporalized directedness**.
 
@@ -1367,132 +1369,149 @@ Action is not reaction; it is **integrated, temporalized directedness**.
 
 ## 6.5 Dignity-in-Practice (D) from Ω, Χ, Ψ
 
-Dignity-in-Practice (D) is the structural grounding of human worth within praxis.  
+Dignity-in-Practice (D) is the structural grounding of human worth within praxis.
 It is not an ontological claim but a **praxeological constraint**: D signifies the system’s capacity to recognize, maintain, and protect the irreducible integrity of agents within asymmetrical relationships.
 
 D arises from Ω (Asymmetry), Χ (Distance), and Ψ (Self-Binding).
 
 ### **Generative Basis**
 
-```
-
+```text
 D = Ψ ∘ Χ ∘ Ω
-
 ```
 
 ### **How the Operators Generate Dignity-in-Practice**
 
-1. **Ω (Asymmetry)**  
-   Dignity emerges precisely because inequalities exist.  
+1. **Ω (Asymmetry)**
+   Dignity emerges precisely because inequalities exist.
    Asymmetry creates the *need* for protective regard: the more capable party must not collapse the less capable.
 
-2. **Χ (Distance)**  
-   Distance introduces reflective restraint:  
-   the ability to **withhold destructive impulse**,  
-   maintain boundaries,  
+2. **Χ (Distance)**
+   Distance introduces reflective restraint:
+   the ability to **withhold destructive impulse**,
+   maintain boundaries,
    and recognize the structural vulnerability of the other.
 
-3. **Ψ (Self-Binding)**  
-   Dignity becomes a stable practice only when the agent binds themselves to norms that protect the other’s irreducible standing.  
+3. **Ψ (Self-Binding)**
+   Dignity becomes a stable practice only when the agent binds themselves to norms that protect the other’s irreducible standing.
    It is not external rule-following but **internalized self-commitment**.
 
 ### **Outcome**
+
 Dignity-in-Practice is the **praxeological stabilization of respect** through:
 
-- asymmetry awareness (Ω),  
-- reflective self-limitation (Χ),  
-- and responsible self-binding (Ψ).
+* asymmetry awareness (Ω),
+* reflective self-limitation (Χ),
+* and responsible self-binding (Ψ).
 
 It grounds moral-like behavior **without metaphysical morality**.
 
 ### **Praxeological Example**
-A leader refrains from exploiting authority (Ω) because they pause and consider consequences (Χ), and because they have internalized ethical self-commitments (Ψ).  
+
+A leader refrains from exploiting authority (Ω) because they pause and consider consequences (Χ), and because they have internalized ethical self-commitments (Ψ).
 Dignity emerges in the *practice* of restraint and protection.
 
 ---
 
 ## 6.6 IA-Forms from Ω + Α + Φ
 
-The IA (Inadult Asymmetry) forms describe **structural pathologies or distortions of praxis** that arise when asymmetry, pattern formation, and recontextualization interact in maladaptive ways.  
-These are not personality traits but **operator-level distortions**.
+The IA (“Inadult Asymmetry”) forms describe **structural pathologies or distortions of praxis** that arise when asymmetry, pattern formation, and recontextualization interact in maladaptive ways.
+These are not personality traits but **operator-level distortions** internal to the PMS framework.
 
 IA-Forms derive directly from Ω (Asymmetry), Α (Attractor), and Φ (Recontextualization).
 
 ### **Generative Basis**
 
-```
-
+```text
 IA = distortions( Φ ∘ Α ∘ Ω )
-
 ```
 
 ### **How the Operators Generate IA-Dynamics**
 
-1. **Ω (Asymmetry)**  
+1. **Ω (Asymmetry)**
    Every IA-form begins from an imbalance of power, responsibility, or exposure.
 
-2. **Α (Attractor)**  
-   The asymmetry stabilizes into a *recurrent pattern*, often rigid, e.g.:  
-   - dominance cycles,  
-   - learned helplessness,  
-   - compulsive deference,  
-   - chronic avoidance.
+2. **Α (Attractor)**
+   The asymmetry stabilizes into a *recurrent pattern*, often rigid, e.g.:
 
-3. **Φ (Recontextualization)**  
-   If recontextualization is absent, frozen, or misapplied, the attractor cannot evolve.  
-   Misapplied Φ generates IA-patterns such as:  
-   - justification of harmful asymmetry,  
-   - misread frames,  
-   - maladaptive meaning-making,  
-   - reinterpretation that reinforces dysfunction.
+   * dominance cycles,
+   * learned helplessness,
+   * compulsive deference,
+   * chronic avoidance.
+
+3. **Φ (Recontextualization)**
+   If recontextualization is absent, frozen, or misapplied, the attractor cannot evolve.
+   Misapplied Φ generates IA-patterns such as:
+
+   * justification of harmful asymmetry,
+   * misread frames,
+   * maladaptive meaning-making,
+   * reinterpretation that reinforces dysfunction.
 
 ### **Outcome**
+
 IA-forms emerge when:
 
-- asymmetry becomes rigid (Ω + Α),  
-- and recontextualization fails or distorts (Φ),  
-- producing persistent **inadulte** patterns in praxis.
+* asymmetry becomes rigid (Ω + Α),
+* and recontextualization fails or distorts (Φ),
+* producing persistent **inadulte** patterns in praxis.
 
 ---
 
-### **Example: IA-B≫H (Excessive Distance between Awareness and Action)**
+### **Example: IA-A≫E (Excessive Distance between Awareness and Enactment)**
 
 Generative explanation:
 
-```
-
+```text
 Ω: agent holds an inflated evaluative asymmetry
 Α: evaluation patterns harden
-Φ: recontextualization biases evaluation instead of balancing action
-→ the evaluative awareness axis (B) over-expands; H collapses
-
+Φ: recontextualization biases evaluation instead of balancing action/enactment
+→ the evaluative awareness axis (A) over-expands; E (enactment) collapses
 ```
 
 The pattern is *structurally* derived, not psychologically explained.
 
 ### **General Rule**
 
-```
-
-IA arises when Axiom 8 (Φ) fails to modulate Axiom 6 (Ω) in the presence of stabilized A (Α).
-
+```text
+IA arises when Axiom 8 (Φ) fails to modulate Axiom 6 (Ω)
+in the presence of stabilized Α (Attractor).
 ```
 
 Thus IA is not malfunction; it is a **predictable structural outcome** of unbalanced operator dynamics.
 
 ---
 
-![Figure 5. Formal Derivations: Awareness (B), Responsibility (V), and IA-B≫H](img/figure_05.png)
+![Figure 5. Formal Derivations: Awareness (A), Responsibility (R), and IA-A≫E](img/figure_05.png)
 
-*Figure 5. Formal derivations for awareness (B), responsibility (V), and the IA-B≫H pattern. Each panel shows the minimal operator chain and the dependency steps by which the corresponding praxeological structure arises from the Δ–Ψ meta-axioms.*
+*Figure 5. Formal derivations for awareness (A), responsibility (R), and the IA-A≫E pattern. Each panel shows the minimal operator chain and the dependency steps by which the corresponding praxeological structure arises from the Δ–Ψ meta-axioms.*
 
 ---
 
-# 7. Formal Specification (Optional YAML Section)
+# 7. Formal Specification in YAML
 
-This optional section demonstrates how the meta-axioms and their compositions can be represented in a machine-readable format. YAML is chosen because it is human-readable, structurally transparent, and widely used in computational modeling, simulation frameworks, and AI alignment research.
+The Praxeological Meta-Structure (PMS) model is fundamentally generative: it defines a minimal set of structural operators (Δ–Ψ) and the rules by which they combine to produce patterns, asymmetries, trajectories, reflexive capacities, and self-binding.
+To enable computational modeling, simulation, automated reasoning, and structural validation, PMS is expressed not only in conceptual form but also as a **machine-readable formal specification**.
 
-The formal specification below is not an implementation of praxis but an **encoding of the generative grammar** that underlies it. This provides (1) a precise representation of each operator, (2) a compositional syntax for deriving higher-order structures, and (3) a bridge between theoretical praxeology and computational systems.
+YAML is chosen because it is:
+
+* human-readable and transparent,
+* structured but non-bureaucratic,
+* widely used in modeling, metadata standards, agent architectures, and AI safety research,
+* ideal for representing operator grammars, rule systems, and dependency graphs.
+
+The YAML presented in this section is **not an implementation of praxis**.
+Rather, it is an **encoding of the generative grammar**: a structural reference that software, simulations, or analytical tools can load and operate on.
+
+The YAML specification provides:
+
+1. a unique formal definition for each meta-axiom (Δ–Ψ),
+2. explicit dependency relations among operators,
+3. compositional rules for generating higher-order structures,
+4. a formally defined self-model fixpoint sequence,
+5. structural distortion patterns (IA-patterns) derived from the same axioms.
+
+This bridges theoretical praxeology with computational systems while remaining non-psychological and non-diagnostic.
 
 ---
 
@@ -1500,11 +1519,11 @@ The formal specification below is not an implementation of praxis but an **encod
 
 The following YAML schema defines each meta-axiom (Δ–Ψ) as a structural operator with:
 
-- a unique identifier,  
-- a minimal definition,  
-- dependencies on prior operators,  
-- generative contributions,  
-- and examples of praxeological relevance.
+* a unique identifier,
+* a minimal definition,
+* explicit dependencies,
+* generative contributions,
+* examples illustrating its presence in praxis.
 
 ```yaml
 meta_axioms:
@@ -1570,15 +1589,15 @@ meta_axioms:
 
   - id: "Ω"
     name: "Asymmetry"
-    definition: "Structural imbalance establishing directionality of responsibility or power."
+    definition: "Structural imbalance establishing directionality of responsibility, exposure, or power."
     depends_on: ["Α"]
     provides:
       - "role differentiation"
       - "responsibility gradients"
       - "vulnerability structures"
     examples:
-      - "parent-child relation"
-      - "mentor-apprentice dynamics"
+      - "parent–child relation"
+      - "mentor–apprentice dynamics"
 
   - id: "Θ"
     name: "Temporality"
@@ -1645,10 +1664,10 @@ meta_axioms:
 
 ## 7.2 Operator Composition in YAML
 
-This section specifies how operators combine to generate praxeological structures.
-Compositions can be stored, analyzed, or instantiated in computational models.
+This section specifies how operators combine to generate higher-order structures.
+Operator compositions define the **derived constructs** of PMS and constitute a formal grammar for computational tools.
 
-### **Example: Defining Awareness, Coherence, Responsibility, Action, Dignity**
+### **Examples: Derived Structural Axes**
 
 ```yaml
 derived_axes:
@@ -1658,11 +1677,11 @@ derived_axes:
 
   Coherence:
     formula: ["Θ", "Λ", "□", "∇"]
-    description: "Temporally stabilized structuring of impulse and expectation."
+    description: "Temporal stabilization of structured impulse and expectation."
 
   Responsibility:
     formula: ["Ψ", "Φ", "Θ", "Ω"]
-    description: "Self-binding orientation toward asymmetry over time."
+    description: "Self-binding to asymmetrical, temporally extended obligations."
 
   Action:
     formula: ["Σ", "Θ", "∇"]
@@ -1670,98 +1689,57 @@ derived_axes:
 
   Dignity_in_Practice:
     formula: ["Ψ", "Χ", "Ω"]
-    description: "Self-bound restraint in the face of asymmetry."
+    description: "Self-bound reflective restraint in asymmetry."
 ```
 
-### **Example: IA-Forms as Distorted Compositions**
+### **Example: IA-Patterns as Distorted Compositions**
 
 ```yaml
-ia_forms:
-  IA_B_much_greater_H:
-    cause: ["Ω", "Α", "Φ"]
-    distortion: "Inflated evaluative asymmetry stabilized by attractor dynamics and misapplied recontextualization."
-    consequence:
-      - "over-reflection, under-action"
+ia_patterns:
+  IA_A_much_greater_E:
+    formula: ["Ω", "Α", "Φ"]
+    description: "Evaluative asymmetry stabilized by an attractor and reinforced by recontextualization, causing an expansion of awareness and a suppression of enactment."
+    consequences:
+      - "over-reflection"
+      - "under-action"
       - "evaluative paralysis"
 ```
-
----
 
 ### **Example: Full Generative Chain (Self-Model)**
 
 ```yaml
-self_model_generation:
+self_model:
   sequence: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
-  meaning: "Self emerges as the fixpoint of integrated, temporalized, reflexively modulated praxis."
+  interpretation: "Self emerges as the fixpoint of integrated, temporalized, reflexively modulated praxis."
 ```
 
 ---
 
-## 7.3 Mapping to Praxeological Anthropology
+## 7.3 Interoperability and Use-Cases of PMS.yaml
 
-The praxeological meta-structure theory provides the generative substrate from which the PA model (Praxeological Anthropology) emerges. While PA was originally formulated as a descriptive-analytic tool, the present framework reveals its axiomatic grounding and structural derivability.
+The PMS YAML file enables:
 
-A full applied exposition of PA — including concrete cases, diagnostic practice, and field methodology — is developed in *Maturity in Action: A Praxeological Anthropology* (Zöller, 2025), together with the public-facing project site at https://www.maturity-in-practice.com/. In parallel, a machine-readable specification of the IA (Inadult Asymmetry) model, derived from the same operator logic, is maintained as an open repository (“Maturity in Practice – IA (Inadult Asymmetry) Model Specification”) at https://github.com/tz-dev/Maturity-in-Practice.
+* **machine-readable loading** of the Δ–Ψ operator system,
+* **automatic reasoning** over operator dependencies,
+* **simulation of praxeological patterns**,
+* **validation of operator chains**,
+* **structural analysis tools** for studying action, asymmetry, and reflexivity,
+* **modular design of agent architectures** (without implying psychology or phenomenology),
+* **formal verification** of derived constructs (e.g., coherence, responsibility).
 
-Below, we map each PA dimension directly onto combinations of the meta-axioms (Δ–Ψ). This mapping demonstrates that the PA model is not an interpretive construct but a systematic projection of the deep grammar of praxis.
+The YAML schema is designed to be:
 
-```yaml
-mapping_to_PA:
-  Awareness_B:
-    derived_from: ["Δ", "□", "Θ"]
-    interpretation:
-      - "Differentiation within a frame sustained across time"
-      - "Attention as structured, not phenomenological"
-
-  Coherence_K:
-    derived_from: ["∇", "□", "Λ", "Θ"]
-    interpretation:
-      - "Impulse structured by context and expectation over temporal extension"
-      - "Narrative consistency of action-form"
-
-  Responsibility_V:
-    derived_from: ["Ω", "Θ", "Φ", "Ψ"]
-    interpretation:
-      - "Asymmetry extended across time"
-      - "Reflexive reinterpretation of obligations"
-      - "Self-binding to roles and commitments"
-
-  Action_H:
-    derived_from: ["∇", "Θ", "Σ"]
-    interpretation:
-      - "Integrated, temporally sustained directedness"
-      - "Resolution of conflicting impulses into enactment"
-
-  Dignity_in_Practice_D:
-    derived_from: ["Ω", "Χ", "Ψ"]
-    interpretation:
-      - "Reflective constraint in asymmetrical relations"
-      - "Internalized normative self-binding"
-```
-
-### **Implications of the Mapping**
-
-1. **PA is a structural derivative**  
-   Each axis arises necessarily from a compact sequence of meta-operators.
-
-2. **PA is complete but minimal**  
-   No PA axis can be removed without destroying structural coverage;  
-   no additional axis is needed because the generative source is complete.
-
-3. **PA is not anthropocentric**  
-   The generative mapping is applicable to human and artificial agents alike.
-
-4. **PA measures structural maturity**  
-   Each axis corresponds to developmental progression through the operator chain.
-
-This mapping positions PA as a **second-order instantiation** of the deeper meta-structure —  
-a tool for diagnosing, analyzing, and evaluating praxis according to the grammar that produces it.
+* stable,
+* extensible without breaking changes,
+* exportable into JSON / XML / Graphviz,
+* suitable for integration in multi-agent simulations,
+* usable for meta-theoretical inspection and structural reasoning.
 
 ---
 
 # 8. Discussion
 
-The introduction of a praxeological meta-structure theory has wide-reaching implications across theoretical, empirical, and computational domains.  
+The introduction of a praxeological meta-structure theory has wide-reaching implications across theoretical, empirical, and computational domains.
 By grounding praxis in a minimal operator set (Δ–Ψ), the framework bridges disciplinary divides and provides a generative model of action and selfhood.
 
 In particular, what is often called *self-organization* can, in this framework, be read structurally: as the emergent stabilization of patterns (Α), asymmetries (Ω), and integrations (Σ) under self-binding (Ψ).
@@ -1772,19 +1750,19 @@ This section outlines key implications, beginning with consequences for action t
 
 ## 8.1 Consequences for Action Theory
 
-The meta-structure theory challenges longstanding assumptions in classical and contemporary action theory.  
+The meta-structure theory challenges longstanding assumptions in classical and contemporary action theory.
 It replaces descriptive or interpretive models with a **generative structural account**, producing several significant consequences:
 
 ### **1. Action Is No Longer Explained by Intentional States**
 
-Most action theories—phenomenological, analytic, cognitive—treat intention as the primary explanatory unit.  
+Most action theories—phenomenological, analytic, cognitive—treat intention as the primary explanatory unit.
 The present framework shows that:
 
-* action originates in **operator composition**, not subjective will;  
-* intention is a *late-stage phenomenon* emerging from Σ and Ψ;  
+* action originates in **operator composition**, not subjective will;
+* intention is a *late-stage phenomenon* emerging from Σ and Ψ;
 * the dynamics of Δ → ∇ → □ → Λ → Α precede and structure intentionality.
 
-Thus, intentional explanations are epiphenomenal:  
+Thus, intentional explanations are epiphenomenal:
 **praxeological structure is prior to intention.**
 
 ---
@@ -1795,40 +1773,40 @@ Traditional theories presume symmetry between agents or adopt moral equality as 
 
 In contrast:
 
-* asymmetry (Ω) is a **necessary structural consequence** of pattern formation (Α);  
-* responsibility and vulnerability emerge *because* of asymmetry, not despite it;  
+* asymmetry (Ω) is a **necessary structural consequence** of pattern formation (Α);
+* responsibility and vulnerability emerge *because* of asymmetry, not despite it;
 * action is always embedded in uneven distributions of capacity, exposure, and obligation.
 
 Action theory must therefore:
 
-* abandon symmetry-based models,  
-* adopt structure-sensitive accounts of power and role,  
+* abandon symmetry-based models,
+* adopt structure-sensitive accounts of power and role,
 * and integrate Ω as a foundational analytic dimension.
 
 ---
 
 ### **3. Praxis Requires Temporal Extension**
 
-Action is not a momentary event but a **temporalized sequence** governed by Θ.  
+Action is not a momentary event but a **temporalized sequence** governed by Θ.
 This has several implications:
 
-* no action can be understood outside its trajectory;  
-* ethical evaluation must consider temporal context;  
+* no action can be understood outside its trajectory;
+* ethical evaluation must consider temporal context;
 * learning and development are intrinsic to praxis, not external add-ons.
 
-Temporal structure is not a container for action;  
+Temporal structure is not a container for action;
 **it is constitutive of action.**
 
 ---
 
 ### **4. Absence (Λ) Becomes Analytically Central**
 
-Classical action theory focuses on what agents *do*.  
+Classical action theory focuses on what agents *do*.
 The meta-structure theory demonstrates that:
 
-* what agents **do not do**,  
-* fail to do,  
-* postpone,  
+* what agents **do not do**,
+* fail to do,
+* postpone,
 * or avoid
 
 is structurally encoded in Λ and is essential to understanding praxis.
@@ -1843,29 +1821,29 @@ This expands action theory to include:
 
 Where most theories locate action in intention, desire, or belief, the present model locates mature action in **integration**:
 
-* Σ resolves competing impulses, roles, and frames;  
-* Σ yields coherent action trajectories;  
+* Σ resolves competing impulses, roles, and frames;
+* Σ yields coherent action trajectories;
 * Σ is the generative basis for stability and maturity.
 
 Thus:
 
-> **Mature action is not stronger intention;  
+> **Mature action is not stronger intention;
 > it is higher-order structural integration.**
 
 ---
 
 ### **6. Selfhood (Ψ) Emerges from Action, Not Vice Versa**
 
-Traditional theories assume that actions emanate from pre-existing selves.  
+Traditional theories assume that actions emanate from pre-existing selves.
 The meta-structure theory reverses this:
 
-* self-binding (Ψ) is the *result* of structured praxis;  
-* selfhood is the **fixpoint** of operator composition;  
+* self-binding (Ψ) is the *result* of structured praxis;
+* selfhood is the **fixpoint** of operator composition;
 * identity emerges from the system’s own commitments.
 
 Thus:
 
-> **Action does not derive from the self;  
+> **Action does not derive from the self;
 > the self derives from action.**
 
 This is a profound reframing of the foundations of agency.
@@ -1876,15 +1854,15 @@ This is a profound reframing of the foundations of agency.
 
 Because operators can be represented in YAML or other formal languages:
 
-* action theory becomes computational,  
-* simulations become possible,  
-* AI agents can be designed with structural analogues of praxis,  
+* action theory becomes computational,
+* simulations become possible,
+* AI agents can be designed with structural analogues of praxis,
 * misalignments and pathologies (IA-forms) can be modeled analytically.
 
 This is the first action theory that is:
 
-* philosophically rigorous,  
-* anthropologically grounded,  
+* philosophically rigorous,
+* anthropologically grounded,
 * and computationally implementable
 
 at the same time.
@@ -2069,7 +2047,7 @@ Responsibility is generated structurally:
 
 ```
 
-V = Ψ ∘ Φ ∘ Θ ∘ Ω
+R = Ψ ∘ Φ ∘ Θ ∘ Ω
 
 ```
 
@@ -2561,13 +2539,13 @@ They are not full proofs, but structured justifications of the operator formulas
 
 ---
 
-### 10.2.1 Awareness (B)
+### 10.2.1 Awareness (A)
 
 **Target formula**
 
 ```text
-B = Θ ∘ □ ∘ Δ
-````
+A = Θ ∘ □ ∘ Δ
+```
 
 **Reasoning**
 
@@ -2581,16 +2559,16 @@ No additional operator:
 * Λ, Α, Ω, Φ, Χ, Σ, Ψ introduce structures beyond minimal awareness (absence, patterning, asymmetry, etc.).
 
 **Result:**
-B is **minimally and sufficiently** generated by Θ, □, Δ: sustained, framed differentiation without further praxeological load.
+A is **minimally and sufficiently** generated by Θ, □, Δ: sustained, framed differentiation without further praxeological load.
 
 ---
 
-### 10.2.2 Coherence (K)
+### 10.2.2 Coherence (C)
 
 **Target formula**
 
 ```text
-K = Θ ∘ Λ ∘ □ ∘ ∇
+C = Θ ∘ Λ ∘ □ ∘ ∇
 ```
 
 **Reasoning**
@@ -2610,16 +2588,16 @@ Coherence requires:
 Higher operators (Φ, Χ, Σ, Ψ) are not required for **basic coherence**, only for more advanced integration and self-relation.
 
 **Result:**
-K formalizes **structured, expectation-sensitive directedness over time**, without yet invoking reflexive integration or self-binding.
+C formalizes **structured, expectation-sensitive directedness over time**, without yet invoking reflexive integration or self-binding.
 
 ---
 
-### 10.2.3 Responsibility (V)
+### 10.2.3 Responsibility (R)
 
 **Target formula**
 
 ```text
-V = Ψ ∘ Φ ∘ Θ ∘ Ω
+R = Ψ ∘ Φ ∘ Θ ∘ Ω
 ```
 
 **Reasoning**
@@ -2635,16 +2613,16 @@ without Φ it remains rigid or blind;
 without Ψ it is not internalized.
 
 **Result:**
-V is the **minimal fixpoint composition** in which asymmetry, temporality, interpretive adaptation, and self-binding converge into structural responsibility.
+R is the **minimal fixpoint composition** in which asymmetry, temporality, interpretive adaptation, and self-binding converge into structural responsibility.
 
 ---
 
-### 10.2.4 Action (H)
+### 10.2.4 Action / Enactment (E)
 
 **Target formula**
 
 ```text
-H = Σ ∘ Θ ∘ ∇
+E = Σ ∘ Θ ∘ ∇
 ```
 
 **Reasoning**
@@ -2656,7 +2634,7 @@ H = Σ ∘ Θ ∘ ∇
 Operators such as Ω, Φ, Ψ enrich the structure (roles, recontextualization, self), but the minimal basis of action as integrated temporal directedness is captured by Σ, Θ, ∇.
 
 **Result:**
-H represents **integrated, temporally organized directedness**—the structural core of enactment.
+E represents **integrated, temporally organized directedness**—the structural core of enactment.
 
 ---
 
@@ -2681,12 +2659,12 @@ D captures dignity as **praxeological practice** of restraint and protection und
 
 ---
 
-### 10.2.6 IA-B≫H (Excessive Distance between Awareness and Action)
+### 10.2.6 IA-A≫E (Excessive Distance between Awareness and Enactment)
 
 **Target schema**
 
 ```text
-IA-B≫H = distortion( Φ ∘ Α ∘ Ω )
+IA-A≫E = distortion( Φ ∘ Α ∘ Ω )
 ```
 
 **Reasoning**
@@ -2697,11 +2675,11 @@ IA-B≫H = distortion( Φ ∘ Α ∘ Ω )
 
 Resulting effect on axes:
 
-* Evaluative awareness (B) over-expands and becomes dominant.
-* Action (H) collapses or is chronically delayed: Σ ∘ Θ ∘ ∇ is underdeveloped or inhibited.
+* Awareness axis (A) over-expands and becomes dominant.
+* Enactment (E) collapses or is chronically delayed: Σ ∘ Θ ∘ ∇ is underdeveloped or inhibited.
 
 **Result:**
-IA-B≫H is not a personality trait but a **structural outcome** of a distorted operator composition in which Φ stabilizes evaluative attractors under Ω at the expense of enactment.
+IA-A≫E is not a personality trait but a **structural outcome** of a distorted operator composition in which Φ stabilizes evaluative attractors under Ω at the expense of enactment.
 
 ---
 
@@ -2808,5 +2786,3 @@ For full definitions and justifications see Section 4.
 * **Dependencies:** Σ, Θ, Χ.
 * **Praxeological role:** Grounds self-models, responsibility, and stable normativity; provides the fixpoint of praxis.
 * **Examples:** Owning a caregiving role; long-term identity commitments and promises.
-
----
