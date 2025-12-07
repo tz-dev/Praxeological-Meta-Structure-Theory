@@ -3,44 +3,76 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0.25\baselineskip, topsep=0.25\baselineskip}
+\setlist[enumerate]{itemsep=0.25\baselineskip, topsep=0.25\baselineskip}
 \usepackage{csquotes}
 \usepackage{booktabs}
-
+\usepackage{etoolbox}
 \usepackage{geometry}
 \geometry{margin=1.2in}
 
 \usepackage{setspace}
 \onehalfspacing
+\usepackage{tabularx}
+
+% Spaltentyp für harte Linksbündigkeit
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
 \usepackage{amsmath, amssymb, amsthm, mathtools}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{newunicodechar}
+\usepackage{fvextra} 
+\DefineVerbatimEnvironment{code}{Verbatim}{
+  breaklines=true,
+  breakanywhere=true,
+  fontsize=\small,
+  samepage=false
+}
+\newunicodechar{Δ}{\OpD}
+\newunicodechar{∇}{\OpI}
+\newunicodechar{□}{\OpF}
+\newunicodechar{Λ}{\OpN}
+\newunicodechar{Α}{\OpA}
+\newunicodechar{Ω}{\OpO}
+\newunicodechar{Θ}{\OpT}
+\newunicodechar{Φ}{\OpR}
+\newunicodechar{Χ}{\OpX}
+\newunicodechar{Σ}{\OpS}
+\newunicodechar{Ψ}{\OpB}
+\newunicodechar{∘}{\ensuremath{\circ}}
 
 % Optional: disable paragraph indentation
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
-% Operator commands (optional but handy)
-\newcommand{\OpD}{\Delta}
-\newcommand{\OpI}{\nabla}
-\newcommand{\OpF}{\square}
-\newcommand{\OpN}{\Lambda}
-\newcommand{\OpA}{A}
-\newcommand{\OpO}{\Omega}
-\newcommand{\OpT}{\Theta}
-\newcommand{\OpR}{\Phi}
-\newcommand{\OpX}{X}      % Χ simplified
-\newcommand{\OpS}{\Sigma}
-\newcommand{\OpB}{\Psi}
+% Operator commands
+\newcommand{\OpD}{\ensuremath{\Delta}}
+\newcommand{\OpI}{\ensuremath{\nabla}}
+\newcommand{\OpF}{\ensuremath{\square}}
+\newcommand{\OpN}{\ensuremath{\Lambda}}
+\newcommand{\OpA}{\ensuremath{A}}
+\newcommand{\OpO}{\ensuremath{\Omega}}
+\newcommand{\OpT}{\ensuremath{\Theta}}
+\newcommand{\OpR}{\ensuremath{\Phi}}
+\newcommand{\OpX}{\ensuremath{X}}
+\newcommand{\OpS}{\ensuremath{\Sigma}}
+\newcommand{\OpB}{\ensuremath{\Psi}}
+\newcommand{\Chi}{\OpX}
 
-% Derived axes shortcuts (optional)
+% Derived axes shortcuts
 \newcommand{\Aw}{\mathsf{A}}
 \newcommand{\Co}{\mathsf{C}}
 \newcommand{\ReA}{\mathsf{R}}
 \newcommand{\En}{\mathsf{E}}
 \newcommand{\Di}{\mathsf{D}}
+
+\newcommand{\wordwrap}[1]{%
+  {\setlength{\spaceskip}{0pt plus 1pt}#1}%
+}
 
 \title{Towards a Praxeological Meta-Structure Theory}
 \author{T. Zöller}
@@ -49,6 +81,10 @@
 \begin{document}
 
 \maketitle
+
+\tableofcontents
+
+\newpage
 
 \section*{0. Abstract}
 
@@ -707,23 +743,23 @@ The ordering of the eleven axioms is \emph{non-arbitrary} and \emph{non-intercha
 
 \begin{table}[h]
   \centering
-  \begin{tabular}{lllll}
+  \begin{tabularx}{\linewidth}{c c l L L}
     \hline
     Order & Axiom & Name & Requires & Provides \\
     \hline
-    1 & Δ & Difference & -- & Basic distinction; foundation for all structure \\
-    2 & ∇ & Impulse & Δ & Direction, drive, activation \\
-    3 & □ & Frame & Δ, ∇ & Context, boundary, constraint \\
-    4 & Λ & Non-Event & □ & Expectation, absence, counterfactual tension \\
-    5 & Α & Attractor & Δ, ∇, □, Λ & Recurrence, pattern, stability \\
-    6 & Ω & Asymmetry & Α & Power, responsibility, roles \\
-    7 & Θ & Temporality & Ω, Α & Sequence, development, commitment \\
-    8 & Φ & Recontextualization & Θ, Ω, □ & Transformation, reinterpretation, learning \\
-    9 & Χ & Distance & Φ, Θ, □ & Reflexivity, inhibition, evaluation \\
-    10 & Σ & Integration & Χ, Φ & Cohesion, coherence, maturity \\
-    11 & Ψ & Self-Binding & Σ, Θ, Χ & Identity, responsibility, selfhood \\
+    1  & Δ & Difference        & \wordwrap{--}            & \wordwrap{Basic distinction foundation for all structure} \\
+    2  & ∇ & Impulse          & \wordwrap{Δ}             & \wordwrap{Direction drive activation} \\
+    3  & □ & Frame            & \wordwrap{Δ ∇}           & \wordwrap{Context boundary constraint} \\
+    4  & Λ & Non-Event        & \wordwrap{□}             & \wordwrap{Expectation absence counterfactual tension} \\
+    5  & Α & Attractor        & \wordwrap{Δ ∇ □ Λ}       & \wordwrap{Recurrence pattern stability} \\
+    6  & Ω & Asymmetry        & \wordwrap{Α}             & \wordwrap{Power responsibility roles} \\
+    7  & Θ & Temporality      & \wordwrap{Ω Α}           & \wordwrap{Sequence development commitment} \\
+    8  & Φ & Recontextualization & \wordwrap{Θ Ω □}      & \wordwrap{Transformation reinterpretation learning} \\
+    9  & Χ & Distance         & \wordwrap{Φ Θ □}         & \wordwrap{Reflexivity inhibition evaluation} \\
+    10 & Σ & Integration      & \wordwrap{Χ Φ}           & \wordwrap{Cohesion coherence maturity} \\
+    11 & Ψ & Self-Binding     & \wordwrap{Σ Θ Χ}         & \wordwrap{Identity responsibility selfhood} \\
     \hline
-  \end{tabular}
+  \end{tabularx}
   \caption{Logical order and dependencies of the eleven meta-axioms (Δ–Ψ).}
 \end{table}
 
@@ -747,7 +783,7 @@ This dependency chain demonstrates that the axioms constitute a minimal and comp
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{img/figure_01.png}
+  \includegraphics[width=\linewidth]{img/figure_01.png}
   \caption{Logical dependency chain of the eleven meta-axioms (Δ–Ψ). Arrows indicate that each operator presupposes the structural conditions established by its predecessors.}
 \end{figure}
 
@@ -765,7 +801,7 @@ We show how higher-order praxeological phenomena naturally emerge from these ope
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{img/figure_02.png}
+  \includegraphics[width=\linewidth]{img/figure_02.png}
   \caption{Layered representation of the eleven meta-axioms as four structural layers: ontological patterning (Δ–Α), relational asymmetry and temporality (Ω–Θ), meta-structural reflexivity (Φ–Σ), and self-binding as fixpoint (Ψ).}
 \end{figure}
 
@@ -900,9 +936,9 @@ Without Θ, praxis lacks continuity, responsibility lacks grounding, and pattern
 Φ (Recontextualization) is the first \emph{meta-transformational operator}. It introduces qualitative change by embedding an existing structure in a new interpretive frame. Φ does not merely update content; it \emph{reassigns meaning}, allowing systems to escape rigid attractors and reconfigure asymmetries.
 
 \paragraph{Generative sequence.}
-\begin{verbatim}
+\begin{code}
 Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
-\end{verbatim}
+\end{code}
 
 \paragraph{Functions of Φ.}
 \begin{enumerate}
@@ -931,9 +967,9 @@ Without Φ, systems stagnate; development is impossible.
 Reflexivity emerges from the dual application of Χ (Distance) and Σ (Integration). While Χ introduces reflective space, Σ organizes disparate insights into coherent structure. Together they generate \emph{reflexive praxis}---the capacity of a system to examine, regulate, and transform its own patterns.
 
 \paragraph{Reflexive composition.}
-\begin{verbatim}
+\begin{code}
 Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
-\end{verbatim}
+\end{code}
 
 \paragraph{Roles of Χ in reflexivity.}
 \begin{itemize}
@@ -962,9 +998,9 @@ Reflexivity emerges from the dual application of Χ (Distance) and Σ (Integrati
 Ψ transforms integrated structures (Σ) into identity, commitment, and responsibility.
 
 \paragraph{Fixpoint mapping.}
-\begin{verbatim}
+\begin{code}
 Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ  =  Self
-\end{verbatim}
+\end{code}
 
 \paragraph{Functions of Ψ.}
 \begin{enumerate}
@@ -993,7 +1029,7 @@ The five structural axes \emph{Awareness, Coherence, Responsibility, Action, and
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{img/figure_03.png}
+  \includegraphics[width=\linewidth]{img/figure_03.png}
   \caption{Operator-level derivation of the five axes (A, C, R, E, D) from the Δ–Ψ grammar.}
 \end{figure}
 
@@ -1004,9 +1040,9 @@ This section demonstrates the derivation of the five axes: Awareness (A), Cohere
 Awareness is the capacity to differentiate, frame, and maintain situational structure across time. It emerges from the combined action of Δ (Difference), □ (Frame), and Θ (Temporality).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 A = Θ ∘ □ ∘ Δ
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate awareness.}
 \begin{enumerate}
@@ -1024,9 +1060,9 @@ A = Θ ∘ □ ∘ Δ
 Coherence is the capacity to form structured, interpretable, and temporally stable action trajectories. It arises not from intention but from the interplay of ∇ (Impulse), □ (Frame), Λ (Non-Event), and Θ (Temporality).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 C = Θ ∘ Λ ∘ □ ∘ ∇
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate coherence.}
 \begin{enumerate}
@@ -1045,9 +1081,9 @@ C = Θ ∘ Λ ∘ □ ∘ ∇
 Responsibility is the structural capacity to recognize, assume, and act within asymmetrical role relations. It is not a moral property but a praxeological function emerging from Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), and Ψ (Self-Binding).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 R = Ψ ∘ Φ ∘ Θ ∘ Ω
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate responsibility.}
 \begin{enumerate}
@@ -1066,9 +1102,9 @@ R = Ψ ∘ Φ ∘ Θ ∘ Ω
 Action (E), understood as enactment, is not mere behavior; it is the integrated realization of directedness across time. In this framework, $E$ reflects the capacity to transform impulses into coherent, temporally extended, and contextually appropriate praxis. This emerges from ∇ (Impulse), Θ (Temporality), and Σ (Integration).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 E = Σ ∘ Θ ∘ ∇
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate action.}
 \begin{enumerate}
@@ -1088,9 +1124,9 @@ Dignity-in-Practice (D) is the structural grounding of human worth within praxis
 D arises from Ω (Asymmetry), Χ (Distance), and Ψ (Self-Binding).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 D = Ψ ∘ Χ ∘ Ω
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate dignity-in-practice.}
 \begin{enumerate}
@@ -1110,9 +1146,9 @@ The IA (``Inadult Asymmetry'') forms describe structural pathologies or distorti
 IA-forms derive directly from Ω (Asymmetry), Α (Attractor), and Φ (Recontextualization).
 
 \paragraph{Generative basis.}
-\begin{verbatim}
+\begin{code}
 IA = distortions( Φ ∘ Α ∘ Ω )
-\end{verbatim}
+\end{code}
 
 \paragraph{How the operators generate IA-dynamics.}
 \begin{enumerate}
@@ -1126,26 +1162,26 @@ IA = distortions( Φ ∘ Α ∘ Ω )
 \paragraph{Example: IA-A$\gg$E (Excessive distance between awareness and enactment).}
 
 Generative explanation:
-\begin{verbatim}
+\begin{code}
 Ω: agent holds an inflated evaluative asymmetry
 Α: evaluation patterns harden
 Φ: recontextualization biases evaluation instead of balancing action/enactment
 → the evaluative awareness axis (A) over-expands; E (enactment) collapses
-\end{verbatim}
+\end{code}
 
 The pattern is structurally derived, not psychologically explained.
 
 \paragraph{General rule.}
-\begin{verbatim}
+\begin{code}
 IA arises when Axiom 8 (Φ) fails to modulate Axiom 6 (Ω)
 in the presence of stabilized Α (Attractor).
-\end{verbatim}
+\end{code}
 
 Thus IA is not malfunction; it is a predictable structural outcome of unbalanced operator dynamics.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{img/figure_05.png}
+  \includegraphics[width=\linewidth]{img/figure_05.png}
   \caption{Formal derivations for awareness (A), responsibility (R), and the IA-A$\gg$E pattern. Each panel shows the minimal operator chain and the dependency steps by which the corresponding praxeological structure arises from the Δ–Ψ meta-axioms.}
 \end{figure}
 
@@ -1185,7 +1221,7 @@ The following YAML schema defines each meta-axiom (Δ–Ψ) as a structural oper
   \item examples illustrating its presence in praxis.
 \end{itemize}
 
-\begin{verbatim}
+\begin{code}
 meta_axioms:
   - id: "Δ"
     name: "Difference"
@@ -1318,7 +1354,7 @@ meta_axioms:
     examples:
       - "holding oneself accountable"
       - "long-term identity commitments"
-\end{verbatim}
+\end{code}
 
 \subsection{Operator Composition in YAML}
 
@@ -1326,7 +1362,7 @@ This section specifies how operators combine to generate higher-order structures
 
 \subsubsection*{Examples: Derived Structural Axes}
 
-\begin{verbatim}
+\begin{code}
 derived_axes:
   Awareness:
     formula: ["Θ", "□", "Δ"]
@@ -1347,11 +1383,11 @@ derived_axes:
   Dignity_in_Practice:
     formula: ["Ψ", "Χ", "Ω"]
     description: "Self-bound reflective restraint in asymmetry."
-\end{verbatim}
+\end{code}
 
 \subsubsection*{Example: IA-Patterns as Distorted Compositions}
 
-\begin{verbatim}
+\begin{code}
 ia_patterns:
   IA_A_much_greater_E:
     formula: ["Ω", "Α", "Φ"]
@@ -1360,15 +1396,15 @@ ia_patterns:
       - "over-reflection"
       - "under-action"
       - "evaluative paralysis"
-\end{verbatim}
+\end{code}
 
 \subsubsection*{Example: Full Generative Chain (Self-Model)}
 
-\begin{verbatim}
+\begin{code}
 self_model:
   sequence: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
   interpretation: "Self emerges as the fixpoint of integrated, temporalized, reflexively modulated praxis."
-\end{verbatim}
+\end{code}
 
 \subsection{Interoperability and Use-Cases of \texttt{PMS.yaml}}
 
@@ -1495,7 +1531,7 @@ The praxeological meta-structure theory has significant implications for the dev
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{img/figure_04.png}
+  \includegraphics[width=\linewidth]{img/figure_04.png}
   \caption{Schematic multi-agent configuration: each agent carries its own Δ–Ψ praxis stack, while a shared relational field encodes cross-agent asymmetry $\Omega_{\text{rel}}$, relational attractors $A_{\text{rel}}$, and joint recontextualization (Φ, Σ).}
 \end{figure}
 
