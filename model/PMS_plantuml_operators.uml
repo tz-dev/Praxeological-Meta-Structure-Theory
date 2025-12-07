@@ -1,0 +1,102 @@
+@startuml PMS_Operators
+
+skinparam classAttributeIconSize 0
+
+class Operator {
+  +id: String
+  +name: String
+  +definition: String
+}
+
+class Delta <<axiom>> {
+  id = "Δ"
+  name = "Difference"
+}
+
+class Nabla <<axiom>> {
+  id = "∇"
+  name = "Impulse"
+}
+
+class Frame <<axiom>> {
+  id = "□"
+  name = "Frame"
+}
+
+class Lambda <<axiom>> {
+  id = "Λ"
+  name = "Non-Event"
+}
+
+class Alpha <<axiom>> {
+  id = "Α"
+  name = "Attractor"
+}
+
+class Omega <<axiom>> {
+  id = "Ω"
+  name = "Asymmetry"
+}
+
+class Theta <<axiom>> {
+  id = "Θ"
+  name = "Temporality"
+}
+
+class Phi <<axiom>> {
+  id = "Φ"
+  name = "Recontextualization"
+}
+
+class Chi <<axiom>> {
+  id = "Χ"
+  name = "Distance"
+}
+
+class Sigma <<axiom>> {
+  id = "Σ"
+  name = "Integration"
+}
+
+class Psi <<axiom>> {
+  id = "Ψ"
+  name = "Self-Binding"
+}
+
+Operator <|-- Delta
+Operator <|-- Nabla
+Operator <|-- Frame
+Operator <|-- Lambda
+Operator <|-- Alpha
+Operator <|-- Omega
+Operator <|-- Theta
+Operator <|-- Phi
+Operator <|-- Chi
+Operator <|-- Sigma
+Operator <|-- Psi
+
+' dependency relations
+Delta ..> Nabla
+Delta ..> Frame
+Nabla ..> Frame
+Frame ..> Lambda
+Delta ..> Alpha
+Nabla ..> Alpha
+Frame ..> Alpha
+Lambda ..> Alpha
+Alpha ..> Omega
+Alpha ..> Theta
+Omega ..> Theta
+Theta ..> Phi
+Omega ..> Phi
+Frame ..> Phi
+Phi ..> Chi
+Theta ..> Chi
+Frame ..> Chi
+Chi ..> Sigma
+Phi ..> Sigma
+Sigma ..> Psi
+Theta ..> Psi
+Chi ..> Psi
+
+@enduml
