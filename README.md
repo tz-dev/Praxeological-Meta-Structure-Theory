@@ -25,7 +25,8 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 ├── model/
 │   ├── Model Specification.html              # Human-readable PMS model specification
 │   ├── Model Specification.pdf               # PDF version of the specification
-│   └── PMS.yaml                              # Canonical PMS model file (schema_version: "PMS_1.1")
+│   ├── PMS.yaml                              # Canonical PMS YAML model file (schema_version: "PMS_1.1")
+│   └── PMS.json                              # JSON mirror of PMS.yaml for programmatic use (schema_version: "PMS_1.1")
 ├── Praxeological Meta-Structure Theory.html  # HTML export of the theoretical paper
 ├── Praxeological Meta-Structure Theory.md    # Markdown export of the theoretical paper
 ├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper (PDF)
@@ -36,14 +37,23 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 
 * **Theoretical paper**
 
-  * `Towards a Praxeological Meta-Structure Theory.pdf`
-    Conceptual foundation of PMS: meta-axioms, operator grammar, relation to praxis, asymmetry and development.
+  * `Praxeological Meta-Structure Theory.pdf`
+    Main exposition of the theory (*Towards a Praxeological Meta-Structure Theory*):
+    meta-axioms, operator grammar, relation to praxis, asymmetry and development.
 
 * **Model specification (human-readable)**
 
   * `model/Model Specification.html`
   * `model/Model Specification.pdf`
-    Technical walkthrough of the PMS YAML: schema_meta, meta-axioms Δ–Ψ, derived structures (A, C, R, E, D, IA-patterns, self-model), AI interface and guardrails.
+
+  Technical walkthrough of the PMS schema:
+
+  * `schema_meta` (model name, status, intended use, normative position, dignity and tragedy clauses)
+  * `core_principles`
+  * `pms_model_reference` (Δ–Ψ, layers, dependency table)
+  * `derived_structures` (A, C, R, E, D, IA-patterns, self-model)
+  * `example_operator_chains`
+  * `ai_interface_pms` (welcome text, modes, guardrails, suggested questions)
 
 * **Canonical YAML model**
 
@@ -56,6 +66,13 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
     * `derived_structures` (A, C, R, E, D, self-model, IA-patterns)
     * `example_operator_chains`
     * `ai_interface_pms` (welcome text, modes, guardrails, suggested questions)
+
+* **JSON mirror (convenience format)**
+
+  * `model/PMS.json`
+    Direct JSON translation of `PMS.yaml` (same schema_version).
+    Provided for programmatic use (web frontends, services, tests).
+    The YAML file remains the **canonical** specification.
 
 ---
 
@@ -91,7 +108,7 @@ All of this is encoded explicitly in `schema_meta.intended_use` and `schema_meta
 If you’re primarily interested in the **theory**:
 
 1. Start with
-   `Towards a Praxeological Meta-Structure Theory.pdf`
+   `Praxeological Meta-Structure Theory.pdf`
 2. Optionally, use
    `Praxeological Meta-Structure Theory.md` or `.html`
    for easier quoting or in-text search.
@@ -101,7 +118,7 @@ If you’re primarily interested in the **theory**:
 If you’re interested in the **technical model**:
 
 1. Open `model/Model Specification.pdf`
-   for a narrative explanation of all YAML blocks.
+   for a narrative explanation of all schema blocks.
 2. Then inspect `model/PMS.yaml` directly
    to see the canonical schema and operator definitions.
 
@@ -110,10 +127,11 @@ If you’re interested in the **technical model**:
 ### 2. For developers / AI researchers
 
 The YAML file is designed to be consumed directly by software and LLM-based agents.
+A JSON mirror (`PMS.json`) is provided for environments that prefer JSON.
 
 #### Load PMS as a structural governance layer
 
-Typical workflow:
+Typical workflow (YAML example):
 
 1. **Load the YAML**
 
@@ -122,6 +140,15 @@ Typical workflow:
 
    with open("model/PMS.yaml", "r", encoding="utf-8") as f:
        pms = yaml.safe_load(f)
+   ```
+
+   Or, for JSON:
+
+   ```python
+   import json
+
+   with open("model/PMS.json", "r", encoding="utf-8") as f:
+       pms = json.load(f)
    ```
 
 2. **Activate the AI interface**
@@ -142,7 +169,7 @@ Typical workflow:
 
 #### Recommended bootstrap for LLM-based agents (non-normative)
 
-> After loading the YAML, parse it and activate `ai_interface_pms`.
+> After loading the schema (YAML or JSON), parse it and activate `ai_interface_pms`.
 > Then:
 >
 > 1. Output the `welcome_message` to the user.
@@ -174,7 +201,8 @@ Some typical use-cases for this repository:
   * Discuss IA-patterns (e.g. `IA_A>>E`, `IA_Sigma_low`) as examples of structural distortions
     between awareness, enactment and integration.
 
-The `examples/` directory is reserved for code or case-style examples that demonstrate these uses. (Content may be added in future revisions.)
+The `examples/` directory is reserved for code or case-style examples that demonstrate these uses.
+(Content may be added in future revisions.)
 
 ---
 
@@ -188,14 +216,14 @@ When referencing the **Praxeological Meta-Structure (PMS)**, please cite both th
 
 **Technical reference**
 
-> *PMS.yaml – Axiomatic Operator Schema*
-> YAML Specification and Model Definition.
+> *PMS.yaml – Axiomatic Operator Schema* — YAML Specification and Model Definition.
+> *PMS.json – Axiomatic Operator Schema* — JSON Specification and Model Definition.
 
 ---
 
 ## License
 
-Unless otherwise stated on the distribution page, the YAML file and this model specification are released under a:
+Unless otherwise stated on the distribution page, the YAML file, the JSON mirror and the model specification are released under a:
 
 **Creative Commons Attribution–NonCommercial–ShareAlike (CC BY-NC-SA)** license.
 
@@ -204,6 +232,3 @@ Unless otherwise stated on the distribution page, the YAML file and this model s
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
-
-
-
