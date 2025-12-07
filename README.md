@@ -34,7 +34,10 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 │   ├── Model Specification.html              # PMS model specification (HTML)
 │   ├── Model Specification.pdf               # PMS model specification (PDF)
 │   ├── PMS.yaml                              # Canonical PMS model (schema_version: "PMS_1.1")
-│   └── PMS.json                              # JSON mirror of PMS.yaml (programmatic convenience format)
+│   ├── PMS.json                              # JSON mirror of PMS.yaml (programmatic convenience format)
+│   ├── PMS_mermaid_chain.md                  # Mermaid operator-chain diagram (Δ→∇→…→Ψ)
+│   ├── PMS_mermaid_axes.md                   # Mermaid diagram mapping Δ–Ψ to A/C/R/E/D
+│   └── PMS_plantuml_operators.uml            # PlantUML class diagram of Δ–Ψ operator hierarchy
 │
 ├── Praxeological Meta-Structure Theory.html  # Main theoretical paper (HTML)
 ├── Praxeological Meta-Structure Theory.md    # Main theoretical paper (MD)
@@ -85,6 +88,20 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
     Provided for programmatic use (web frontends, services, tests).
     The YAML file remains the **canonical** specification.
 
+* **Diagram files**
+
+  * `model/PMS_mermaid_chain.md`
+    Mermaid diagram for the Δ→∇→□→Λ→Α→Ω→Θ→Φ→Χ→Σ→Ψ operator chain.
+
+  * `model/PMS_mermaid_axes.md`
+    Mermaid diagram showing how Δ–Ψ generate the derived axes A, C, R, E, D.
+
+  * `model/PMS_plantuml_operators.uml`
+    PlantUML class diagram representing Δ–Ψ as operator classes with dependencies.
+
+These diagrams are optional but useful for visualizing the operator stack and its derived structures.
+The Mermaid files render directly on GitHub; the PlantUML file can be rendered via PlantUML-compatible tools or CI.
+
 ---
 
 ## What PMS is (and is not)
@@ -119,11 +136,11 @@ It can explain and analyse Δ–Ψ operator chains, derived axes (A/C/R/E/D), IA
 
 **GPT description:**
 
-> A structural theory assistant based on the Praxeological Meta-Structure (PMS) model (Δ–Ψ). It analyses operator chains, derived axes, IA-patterns, and the self-model fixpoint. Designed for theory, AI architecture, and formal reasoning — not diagnosis or person-evaluation.  
+> A structural theory assistant based on the Praxeological Meta-Structure (PMS) model (Δ–Ψ). It analyses operator chains, derived axes, IA-patterns, and the self-model fixpoint. Designed for theory, AI architecture, and formal reasoning — not diagnosis or person-evaluation.
 
-This GPT follows the guardrails defined in `schema_meta.not_intended_for` and works exclusively at the structural level (operators, roles, frames, asymmetries, trajectories), never on psychological or diagnostic interpretations.  
+This GPT follows the guardrails defined in `schema_meta.not_intended_for` and works exclusively at the structural level (operators, roles, frames, asymmetries, trajectories), never on psychological or diagnostic interpretations.
 
-[![PMS Model Assistant](https://img.shields.io/badge/PMS%20Model%20Assistant-ChatGPT-blue?logo=openai\&style=flat-square)](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)  
+[![PMS Model Assistant](https://img.shields.io/badge/PMS%20Model%20Assistant-ChatGPT-blue?logo=openai\&style=flat-square)](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)
 
 ---
 
@@ -284,6 +301,3 @@ Unless otherwise stated on the distribution page, the YAML file, the JSON mirror
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
-
-
-
