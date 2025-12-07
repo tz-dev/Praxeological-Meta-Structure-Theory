@@ -69,9 +69,15 @@ T. Zöller
    8.5 Limitations and Future Work  
 9. Conclusion  
 10. Appendix  
-    - Additional Examples  
-    - Formal Derivations  
-    - Glossary of Meta-Axioms
+   10.1 Additional Mini-Examples of Operator Use  
+   10.2 Sketches of Formal Derivations  
+      10.2.1 Awareness (B)  
+      10.2.2 Coherence (K)  
+      10.2.3 Responsibility (V)  
+      10.2.4 Action (H)  
+      10.2.5 Dignity-in-Practice (D)  
+      10.2.6 IA-B≫H (Excessive Distance between Awareness and Action)  
+   10.3 Glossary of Meta-Axioms (Δ–Ψ)  
 
 ---
 
