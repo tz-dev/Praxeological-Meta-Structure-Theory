@@ -51,17 +51,17 @@ T. Zöller
    5.5 Developmental Jumps via Φ
    5.6 Reflexivity (Χ + Σ)
    5.7 Self-Modeling (Ψ as Fixpoint)
-6. Application I: Derivation of the PA Model
+6. Application I: Derived Structural Constructs
    6.1 Awareness (A) from Δ, □, Θ
    6.2 Coherence (C) from ∇, □, Λ, Θ
    6.3 Responsibility (R) from Ω, Θ, Φ, Ψ
    6.4 Action (E) from ∇, Θ, Σ
    6.5 Dignity-in-Practice (D) from Ω, Χ, Ψ
    6.6 IA-Forms from Ω + Α + Φ
-7. Formal Specification (Optional YAML Section)
+7. Formal Specification in YAML
    7.1 Meta-Axioms in YAML
    7.2 Operator Composition in YAML
-   7.3 Mapping to Praxeological Anthropology
+   7.3 Interoperability and Use-Cases of PMS.yaml
 8. Discussion
    8.1 Consequences for Action Theory
    8.2 Consequences for AI Development
@@ -77,7 +77,7 @@ T. Zöller
     10.2.3 Responsibility (R)
     10.2.4 Action (E)
     10.2.5 Dignity-in-Practice (D)
-    10.2.6 IA-A≫E (Excessive Distance between Awareness and Action)
+    10.2.6 IA-A≫E (Excessive Distance between Awareness and Enactment)
     10.3 Glossary of Meta-Axioms (Δ–Ψ)
 
 ---
@@ -133,6 +133,8 @@ This paper introduces a praxeological meta-structure theory with the following c
 
 The paper thus establishes a new structural foundation upon which concrete action models, developmental theories, and artificial agent architectures can be built.
 
+We refer to this operator system as the Praxeological Meta-Structure (PMS) theory and, where appropriate, as the PMS model when highlighting its formal, implementable character.  
+
 ## 1.4 Scope and Delimitation
 
 This work is intentionally **non-physical**, **non-metaphysical**, and **non-psychological**.
@@ -151,7 +153,7 @@ It does **not** attempt to fully develop system-level or multi-agent structure, 
 
 # 2. Related Work
 
-The proposed meta-structure theory positions itself within a long lineage of attempts to formalize the underlying architecture of action, cognition, and systemic organization. While several major traditions have articulated foundational concepts relevant to praxis, none provide a generative, operational, and agent-compatible grammar from which concrete action structures can be derived. This section situates the present work relative to three major intellectual lineages: transcendental philosophy (Kant), systems theory (Luhmann), and cybernetic epistemology (Bateson).
+The proposed meta-structure theory positions itself within a long lineage of attempts to formalize the underlying architecture of action, cognition, and systemic organization. While several major traditions have articulated foundational concepts relevant to praxis, none provide a generative, operational, and agent-compatible grammar from which concrete action structures can be derived. This section situates the present work relative to several major intellectual lineages, including transcendental philosophy (Kant), systems theory (Luhmann), and cybernetic epistemology (Bateson).  
 
 ## 2.1 Kant’s Categories
 
@@ -1454,7 +1456,7 @@ IA-forms emerge when:
 
 * asymmetry becomes rigid (Ω + Α),
 * and recontextualization fails or distorts (Φ),
-* producing persistent **inadulte** patterns in praxis.
+* producing persistent **inadult** patterns in praxis.
 
 ---
 
