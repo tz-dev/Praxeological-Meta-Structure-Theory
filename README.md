@@ -31,14 +31,15 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 │   └── CC-BY-NC-SA-4.0.txt                   # Creative Commons license (non-commercial, share-alike)
 │
 ├── model/
-│   ├── Model Specification.html              # Human-readable PMS model specification
-│   ├── Model Specification.pdf               # PDF version of the specification
+│   ├── Model Specification.html              # PMS model specification (HTML)
+│   ├── Model Specification.pdf               # PMS model specification (PDF)
 │   ├── PMS.yaml                              # Canonical PMS model (schema_version: "PMS_1.1")
 │   └── PMS.json                              # JSON mirror of PMS.yaml (programmatic convenience format)
 │
-├── Praxeological Meta-Structure Theory.html  # HTML export of the theoretical paper
-├── Praxeological Meta-Structure Theory.md    # Markdown export (easy quoting)
-├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper
+├── Praxeological Meta-Structure Theory.html  # Main theoretical paper (HTML)
+├── Praxeological Meta-Structure Theory.md    # Main theoretical paper (MD)
+├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper (PDF)
+├── Praxeological Meta-Structure Theory.tex   # Main theoretical paper (TEX)
 │
 └── README.md                                 # Repository overview and usage instructions
 ````
@@ -283,5 +284,6 @@ Unless otherwise stated on the distribution page, the YAML file, the JSON mirror
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
+
 
 
