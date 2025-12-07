@@ -13,24 +13,34 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 ## Repository contents
 
 ```text
-├── examples/                                 # (Reserved) Examples of PMS-based analyses or code
-├── img/
-│   ├── figure_01.png                         # Figures used in the paper / model spec
+├── examples/                                 # Runnable PMS example scripts (see README table)
+│   ├── 01_load_and_list_meta_axioms.py       # Load PMS.yaml and list Δ–Ψ
+│   ├── 02_validate_operator_chain.py         # Validate operator chains using dependency rules
+│   ├── 03_project_scene_to_axes.py           # Map a praxis vignette to A/C/R/E/D
+│   ├── 04_detect_IA_pattern.py               # Detect IA_A>>E structural pattern
+│   └── 05_visualize_self_model.py            # Visualize the self-model operator chain (Ψ…Δ)
+│
+├── img/                                      # Figures used in paper
+│   ├── figure_01.png
 │   ├── figure_02.png
 │   ├── figure_03.png
 │   ├── figure_04.png
 │   └── figure_05.png
+│
 ├── license/
-│   └── CC-BY-NC-SA-4.0.txt                   # License
+│   └── CC-BY-NC-SA-4.0.txt                   # Creative Commons license (non-commercial, share-alike)
+│
 ├── model/
 │   ├── Model Specification.html              # Human-readable PMS model specification
 │   ├── Model Specification.pdf               # PDF version of the specification
-│   ├── PMS.yaml                              # Canonical PMS YAML model file (schema_version: "PMS_1.1")
-│   └── PMS.json                              # JSON mirror of PMS.yaml for programmatic use (schema_version: "PMS_1.1")
+│   ├── PMS.yaml                              # Canonical PMS model (schema_version: "PMS_1.1")
+│   └── PMS.json                              # JSON mirror of PMS.yaml (programmatic convenience format)
+│
 ├── Praxeological Meta-Structure Theory.html  # HTML export of the theoretical paper
-├── Praxeological Meta-Structure Theory.md    # Markdown export of the theoretical paper
-├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper (PDF)
-└── README.md                                 # This file
+├── Praxeological Meta-Structure Theory.md    # Markdown export (easy quoting)
+├── Praxeological Meta-Structure Theory.pdf   # Main theoretical paper
+│
+└── README.md                                 # Repository overview and usage instructions
 ````
 
 ### Core artefacts
@@ -129,6 +139,9 @@ If you’re interested in the **technical model**:
 The YAML file is designed to be consumed directly by software and LLM-based agents.
 A JSON mirror (`PMS.json`) is provided for environments that prefer JSON.
 
+> Additional runnable code examples are provided in the `examples/` directory.
+> They demonstrate how to load, inspect, validate, visualise and apply PMS structures programmatically.
+
 #### Load PMS as a structural governance layer
 
 Typical workflow (YAML example):
@@ -177,6 +190,29 @@ Typical workflow (YAML example):
 >    whenever you perform PMS-related reasoning.
 
 This keeps LLM behaviour aligned with the **intended structural scope** of the model.
+
+---
+
+## Examples
+
+The `examples/` directory contains a set of minimal yet powerful scripts demonstrating how PMS can be used programmatically.
+Each example focuses on a different structural capability of the model.
+
+| File                                | Purpose                                                                | PMS Structures Used               |
+| ----------------------------------- | ---------------------------------------------------------------------- | --------------------------------- |
+| **01_load_and_list_meta_axioms.py** | Load PMS.yaml and list all meta-axioms Δ–Ψ                             | `pms_model_reference.meta_axioms` |
+| **02_validate_operator_chain.py**   | Validate whether an operator chain is consistent with PMS dependencies | `dependency_table`, Δ–Ψ           |
+| **03_project_scene_to_axes.py**     | Map a small praxis vignette to derived axes A/C/R/E/D                  | `derived_axes`, operator formulas |
+| **04_detect_IA_pattern.py**         | Detect whether a scene resembles IA_A>>E                               | `ia_patterns.IA_A_much_greater_E` |
+| **05_visualize_self_model.py**      | Visualize the Self-Binding operator chain Ψ–Δ as a directed graph      | `self_model.formula_sequence`     |
+
+Each script contains:
+
+* a uniform header with: filename, description, version, operator sets involved
+* strict guardrail reminders reflecting `schema_meta.not_intended_for`
+* only structural logic — no psychological inference
+
+These examples illustrate how PMS functions as a **structural algebra of praxis** that software systems can load, inspect, and reason over.
 
 ---
 
@@ -232,3 +268,4 @@ Unless otherwise stated on the distribution page, the YAML file, the JSON mirror
 * 🔁 Derivative works must attribute the original author and share under the same license
 
 Please check the repository description or accompanying notices for any updated licensing information.
+
