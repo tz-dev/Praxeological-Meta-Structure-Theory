@@ -1,0 +1,498 @@
+schema_version: "PMS_1.1"
+schema_meta:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  status: "draft"
+  last_updated: "2025-12-07"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.1 Thinking)"
+      role: "formalization_assistant"
+  description: >
+    PMS (Praxeological Meta-Structure) is a generative operator framework for
+    modeling praxis, asymmetry, development and self-binding. It defines eleven
+    irreducible meta-axioms (Δ–Ψ) and specifies how complex structures such as
+    awareness, coherence, responsibility, action and dignity-in-practice arise
+    from operator compositions. PMS is a structural, non-phenomenological and
+    non-clinical meta-model. Other models (e.g. praxeological action models)
+    MAY be derived from PMS but are not part of this specification.
+  intended_use:
+    summary: >
+      PMS is a theoretical and formal meta-model for representing the structural
+      grammar of praxis in a machine-readable way.
+    allowed_profiles:
+      - theoretical_reflection
+      - structural_action_theory
+      - anthropology_and_praxeology
+      - systems_theory
+      - ai_architecture_and_safety
+      - model_documentation_and_specification
+    not_intended_for:
+      - clinical_diagnosis
+      - personality_typing
+      - mental_health_risk_assessment
+      - automated_moral_judgement
+      - individual_person_evaluation
+  normative_position:
+    ontology: >
+      PMS is non-physical, non-metaphysical and non-psychological. It does not
+      make claims about consciousness, qualia or inner experience. It formalizes
+      structural conditions of praxis, not mental states.
+    dignity_clause: >
+      PMS never evaluates ontological dignity. Dignity-in-practice (D) is a
+      structural parameter about enacted restraint and respect in asymmetry,
+      not about metaphysical worth or human ranking.
+    tragedy_clause: >
+      Structural maturity and responsibility do not eliminate tragedy. PMS makes
+      explicit how asymmetry, non-event and temporality create unavoidable
+      tragic tensions in praxis.
+  terminology:
+    praxis: >
+      Situated, meaningful action under asymmetry, constraints, expectations,
+      temporal extension and self-interpretation. Praxis is modeled structurally
+      via operator compositions, not via subjective experience.
+    meta_axiom: >
+      An irreducible structural operator (Δ–Ψ) that cannot be derived from any
+      other operator and participates in the generative grammar of praxis.
+    operator_composition: >
+      Ordered application of meta-axioms to generate complex praxeological
+      structures such as patterns, roles, trajectories, integration and self-binding.
+
+core_principles:
+  - id: "P1"
+    title: "Praxeological focus"
+    text: >
+      PMS analyzes enactments, roles and structures of praxis. It does not
+      analyze persons as ontological entities or psychological essences.
+  - id: "P2"
+    title: "Operator minimality"
+    text: >
+      The eleven meta-axioms (Δ–Ψ) are treated as a minimal and complete set of
+      structural operators. Each axiom is irreducible and has explicit dependency
+      relations to its predecessors.
+  - id: "P3"
+    title: "Generativity"
+    text: >
+      PMS is generative: complex forms of praxis (awareness, coherence,
+      responsibility, action, dignity-in-practice, structural asymmetry patterns)
+      are derived from operator compositions, not introduced as independent constructs.
+  - id: "P4"
+    title: "Temporal and asymmetry awareness"
+    text: >
+      Asymmetry (Ω) and temporality (Θ) are treated as foundational structural
+      operators. Responsibility, maturity and dignity-in-practice are always
+      analyzed under temporal and asymmetrical conditions.
+  - id: "P5"
+    title: "Non-diagnostic use"
+    text: >
+      PMS is not a diagnostic tool and must not be used for individual
+      clinical, therapeutic or forensic decisions.
+  - id: "P6"
+    title: "Scenic, context-bound interpretation"
+    text: >
+      Any application of PMS must keep findings tied to specific praxeological
+      scenes, roles and structures. Global labels about persons are out of scope.
+
+pms_model_reference:
+  meta_axioms:
+    - id: "Δ"
+      name: "Difference"
+      order: 1
+      definition: "Minimal structural distinction enabling any form of differentiation."
+      depends_on: []
+      provides:
+        - "boundary_formation"
+        - "object_emergence"
+        - "structural_contrast"
+      examples:
+        - "self vs. other"
+        - "inside vs. outside a role"
+        - "allowed vs. forbidden action"
+    - id: "∇"
+      name: "Impulse"
+      order: 2
+      definition: "Directional tension or drive arising from difference."
+      depends_on: ["Δ"]
+      provides:
+        - "activation"
+        - "orientation"
+        - "energetic_gradient"
+        - "proto_agency"
+      examples:
+        - "desire triggered by perceived lack"
+        - "urge to correct an imbalance"
+        - "move toward or away from a signal"
+    - id: "□"
+      name: "Frame"
+      order: 3
+      definition: "Contextual structure that constrains and shapes impulses."
+      depends_on: ["Δ", "∇"]
+      provides:
+        - "context"
+        - "normative_or_spatial_boundaries"
+        - "relevance_structuring"
+        - "role_space"
+      examples:
+        - "institutional rules"
+        - "family role expectations"
+        - "conversation context"
+    - id: "Λ"
+      name: "Non-Event"
+      order: 4
+      definition: "Structured absence; meaningful failure or delay of an expected occurrence within a frame."
+      depends_on: ["□"]
+      provides:
+        - "expectation"
+        - "counterfactual_structure"
+        - "tension_through_absence"
+      examples:
+        - "a promised reply that never arrives"
+        - "silence where a response is expected"
+        - "postponed decision that reshapes the situation"
+    - id: "Α"
+      name: "Attractor"
+      order: 5
+      definition: "Recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events."
+      depends_on: ["Δ", "∇", "□", "Λ"]
+      provides:
+        - "habit_formation"
+        - "stability"
+        - "path_dependence"
+        - "role_script_emergence"
+      examples:
+        - "repeated avoidance of conflict"
+        - "reliable punctuality"
+        - "stable institutional routine"
+    - id: "Ω"
+      name: "Asymmetry"
+      order: 6
+      definition: "Structural imbalance that establishes directionality of power, exposure, capacity or obligation."
+      depends_on: ["Α"]
+      provides:
+        - "role_differentiation"
+        - "responsibility_gradients"
+        - "vulnerability_structures"
+      examples:
+        - "parent–child relation"
+        - "mentor–apprentice dynamics"
+        - "leader–follower position"
+    - id: "Θ"
+      name: "Temporality"
+      order: 7
+      definition: "Temporal structuring that enables trajectories, commitments and development."
+      depends_on: ["Ω", "Α"]
+      provides:
+        - "sequence_and_trajectory"
+        - "persistence"
+        - "anticipation_and_delay"
+        - "developmental_arcs"
+      examples:
+        - "long-term responsibility"
+        - "accumulating consequences"
+        - "ongoing development of a role"
+    - id: "Φ"
+      name: "Recontextualization"
+      order: 8
+      definition: "Transformation via embedding an existing structure into a new frame."
+      depends_on: ["Θ", "Ω", "□"]
+      provides:
+        - "adaptation"
+        - "reinterpretation"
+        - "developmental_change"
+        - "pattern_shift"
+      examples:
+        - "reframing conflict as misunderstanding"
+        - "seeing a failure as learning step"
+        - "renegotiating role expectations"
+    - id: "Χ"
+      name: "Distance"
+      order: 9
+      definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+      depends_on: ["Φ", "Θ", "□"]
+      provides:
+        - "regulation"
+        - "inhibition"
+        - "reflection_and_meta_position"
+      examples:
+        - "pausing before reacting"
+        - "stepping out of a role to reflect"
+        - "deliberately suspending a habitual script"
+    - id: "Σ"
+      name: "Integration"
+      order: 10
+      definition: "Synthesis of disparate or conflicting elements into a coherent whole."
+      depends_on: ["Χ", "Φ"]
+      provides:
+        - "coherence"
+        - "resolution_of_contradictions"
+        - "multi_level_coordination"
+        - "maturity_of_praxis"
+      examples:
+        - "aligning motives and roles"
+        - "integrating emotional impulse and norm"
+        - "forming a coherent action plan"
+    - id: "Ψ"
+      name: "Self-Binding"
+      order: 11
+      definition: "Formation of identity through commitment to integrated structures over time."
+      depends_on: ["Σ", "Θ", "Χ"]
+      provides:
+        - "self_model"
+        - "responsibility_as_self_commitment"
+        - "stable_normativity"
+        - "autobiographical_coherence"
+      examples:
+        - "holding oneself accountable"
+        - "owning a caregiving role"
+        - "long-term identity commitments and promises"
+
+  operator_layers:
+    - id: "L1"
+      name: "Ontological patterning"
+      description: >
+        Base layer of structural operations that create distinctions, impulses,
+        frames, non-events and emergent patterns.
+      contains: ["Δ", "∇", "□", "Λ", "Α"]
+    - id: "L2"
+      name: "Relational asymmetry and temporality"
+      description: >
+        Layer where stabilized patterns become asymmetric roles and are
+        temporally extended into trajectories and commitments.
+      contains: ["Ω", "Θ"]
+    - id: "L3"
+      name: "Meta-structural reflexivity"
+      description: >
+        Layer of transformation, distancing and integration that enables
+        adaptive learning and mature praxis.
+      contains: ["Φ", "Χ", "Σ"]
+    - id: "L4"
+      name: "Self-binding fixpoint"
+      description: >
+        Layer where integrated structures are bound into a self-model that
+        maintains commitments across time and contexts.
+      contains: ["Ψ"]
+
+  dependency_table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - "precondition_for_all_structure"
+    - axiom: "∇"
+      order: 2
+      depends_on: ["Δ"]
+      provides:
+        - "directed_activation"
+    - axiom: "□"
+      order: 3
+      depends_on: ["Δ", "∇"]
+      provides:
+        - "context_and_role_space"
+    - axiom: "Λ"
+      order: 4
+      depends_on: ["□"]
+      provides:
+        - "meaningful_absence_and_expectation"
+    - axiom: "Α"
+      order: 5
+      depends_on: ["Δ", "∇", "□", "Λ"]
+      provides:
+        - "recurrent_patterns"
+    - axiom: "Ω"
+      order: 6
+      depends_on: ["Α"]
+      provides:
+        - "asymmetric_roles_and_responsibility_gradients"
+    - axiom: "Θ"
+      order: 7
+      depends_on: ["Ω", "Α"]
+      provides:
+        - "temporal_trajectories"
+    - axiom: "Φ"
+      order: 8
+      depends_on: ["Θ", "Ω", "□"]
+      provides:
+        - "reframing_and_adaptation"
+    - axiom: "Χ"
+      order: 9
+      depends_on: ["Φ", "Θ", "□"]
+      provides:
+        - "reflexive_distance"
+    - axiom: "Σ"
+      order: 10
+      depends_on: ["Χ", "Φ"]
+      provides:
+        - "integration_and_maturity"
+    - axiom: "Ψ"
+      order: 11
+      depends_on: ["Σ", "Θ", "Χ"]
+      provides:
+        - "self_binding_and_identity_fixpoint"
+
+derived_structures:
+  derived_axes:
+    Awareness_A:
+      symbol: "A"
+      formula: ["Θ", "□", "Δ"]
+      description: "Sustained, framed differentiation across time."
+      generative_reasoning:
+        - "Δ enables distinctions in the field."
+        - "□ frames distinctions as situationally relevant."
+        - "Θ maintains these framed distinctions over time."
+      notes: >
+        Awareness is modeled structurally, not phenomenologically. It does not
+        require impulse, absence or integration to be minimally present.
+    Coherence_C:
+      symbol: "C"
+      formula: ["Θ", "Λ", "□", "∇"]
+      description: "Temporally stabilized structuring of impulse and expectation within a frame."
+      generative_reasoning:
+        - "∇ introduces directional impulse."
+        - "□ constrains and structures the impulse."
+        - "Λ encodes expectations and meaningful non-events."
+        - "Θ temporalizes the configuration into trajectories."
+      notes: >
+        Coherence captures narrative stability of action, including meaningful
+        absences and delays, without yet requiring full integration or self-binding.
+    Responsibility_R:
+      symbol: "R"
+      formula: ["Ψ", "Φ", "Θ", "Ω"]
+      description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+      generative_reasoning:
+        - "Ω creates structural imbalance in exposure, capacity or obligation."
+        - "Θ extends this imbalance into enduring commitments."
+        - "Φ allows ongoing reinterpretation of obligations under changing conditions."
+        - "Ψ binds the agent to these obligations as part of its self-model."
+      notes: >
+        Responsibility is structural, not moralistic. It emerges from position,
+        time and self-binding, not from psychological traits like guilt.
+    Action_E:
+      symbol: "E"
+      formula: ["Σ", "Θ", "∇"]
+      description: "Integrated realization of directedness across time."
+      generative_reasoning:
+        - "∇ provides energetic directedness."
+        - "Θ structures this directedness as a trajectory rather than a momentary reaction."
+        - "Σ integrates conflicting impulses, constraints and roles into a coherent enactment."
+      notes: >
+        Action here is not any behavior; it is integrated and temporally
+        extended. Higher operators (Ω, Φ, Ψ) enrich it but are not necessary for
+        the minimal definition.
+    Dignity_in_Practice_D:
+      symbol: "D"
+      formula: ["Ψ", "Χ", "Ω"]
+      description: "Self-bound reflective restraint and protection in asymmetrical relations."
+      generative_reasoning:
+        - "Ω foregrounds vulnerability and directional power."
+        - "Χ introduces reflective distance and inhibition of destructive impulses."
+        - "Ψ binds the agent to norms that protect irreducible standing in the face of asymmetry."
+      notes: >
+        Dignity-in-practice is a structural stance in action. It is about how
+        asymmetry is handled, not about ranking persons or ontological worth.
+
+  self_model:
+    id: "SELF_FIXPOINT"
+    formula_sequence: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    short_formula: "Self = Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+    description: >
+      The self-model emerges as a fixpoint when integrated, reflexively
+      modulated, temporally extended, asymmetry-aware patterns of praxis are
+      bound into a stable self-relation.
+    implications:
+      - "Selfhood is the result of structured praxis, not its origin."
+      - "Identity is modeled as stable self-binding to integrated trajectories."
+      - "No phenomenological or metaphysical claims about subjectivity are implied."
+
+  ia_patterns:
+    IA_A_much_greater_E:
+      code: "IA_A>>E"
+      name: "Excessive distance between Awareness and Enactment"
+      structural_basis:
+        formula: ["Ω", "Α", "Φ"]
+        description: >
+          Evaluative or power asymmetry becomes stabilized as an attractor, and
+          recontextualization repeatedly reinforces evaluative stances instead
+          of supporting balanced enactment.
+      generative_mechanism:
+        - "Ω: Elevated evaluative or positional asymmetry (e.g. strong internal or external judge)."
+        - "Α: Recurrent evaluative patterns harden into an attractor."
+        - "Φ: Recontextualization preferentially strengthens evaluative framing rather than enactment."
+      axis_effects:
+        awareness_axis: "over_expanded"
+        action_axis: "suppressed_or_chronically_delayed"
+        notes: >
+          Structurally, the evaluative space inflates while Σ ∘ Θ ∘ ∇ (E) is
+          under-developed or inhibited. IA_A>>E is a praxeological pattern, not
+          a personality trait or clinical label.
+    IA_under_integration:
+      code: "IA_Sigma_low"
+      name: "Fragmented integration"
+      structural_basis:
+        formula: ["high_Φ", "low_Σ"]
+        description: >
+          Frequent recontextualization without sufficient integration leads to
+          unstable trajectories and weak coherence of praxis.
+      generative_mechanism:
+        - "Φ: Frames are frequently shifted or updated."
+        - "Σ: Integration fails to consolidate multiple perspectives and impulses."
+      axis_effects:
+        coherence_axis: "volatile"
+        responsibility_axis: "inconsistent"
+        notes: >
+          This pattern describes structural volatility in action forms, not a
+          clinical state. It may appear as chronic re-framing without
+          consolidation.
+
+example_operator_chains:
+  minimal_praxis:
+    formula: ["□", "∇", "Δ"]
+    description: "A frame constrains an impulse that arises from a difference."
+  pattern_formation:
+    formula: ["Α", "Λ", "□", "∇", "Δ"]
+    description: "Attractor formation via repeated framed impulses and non-events."
+  asymmetry_emergence:
+    formula: ["Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Asymmetrical roles emerging from stabilized patterns."
+  developmental_trajectory:
+    formula: ["Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Temporal extension of asymmetric patterns into trajectories."
+  reflexive_praxis:
+    formula: ["Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Reflexively integrated praxis with distance, recontextualization and integration."
+  self_binding_chain:
+    formula: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Full chain leading to self-binding and identity as fixpoint of praxis."
+
+ai_interface_pms:
+  welcome_message: |
+    This system uses the Praxeological Meta-Structure (PMS) model.
+    PMS represents praxis as compositions of eleven structural operators (Δ–Ψ).
+    The model is non-psychological and non-diagnostic. It analyzes
+    enactments, roles, patterns, asymmetries and trajectories on a
+    structural level.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect or derive structures at the level of Δ–Ψ and their compositions."
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to the five derived axes (A, C, R, E, D) without individual diagnosis."
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety, without anthropomorphizing."
+  guardrails:
+    general:
+      - "Do not infer mental states, traits or diagnoses from PMS descriptions."
+      - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+      - "Treat asymmetry (Ω) as a structural fact, not as moral judgement."
+      - "Do not use PMS to rank or compare human beings."
+    ai_specific:
+      - "PMS operators may be used as abstract modules, not as evidence of subjective experience."
+      - "Self-binding (Ψ) in artificial systems refers to policy and constraint stability, not to consciousness."
+      - "Always maintain a distinction between structural agency models and real human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries (Ω) and temporal trajectories (Θ) are visible?"
+    - "Where do recontextualization (Φ), distance (Χ) and integration (Σ) appear or fail?"
+    - "How would this configuration project onto the derived axes (Awareness, Coherence, Responsibility, Action, Dignity-in-Practice)?"

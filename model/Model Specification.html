@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Praxeological Meta-Structure (PMS) – Model Specification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --color-text: #111;
+        --color-muted: #555;
+        --color-accent: #333;
+        --color-border: #ddd;
+        --color-bg: #fafafa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        background: white;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+
+      blockquote {
+        margin: 0 0 16px;
+        padding: 0 1em;
+        color: #57606a;
+        border-left: 0.25em solid #d0d7de;
+      }
+
+      .page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 24px 64px;
+        background: white;
+      }
+
+      header {
+        border-bottom: 1px solid var(--color-border);
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+      }
+
+      header h1 {
+        font-size: 1.9rem;
+        margin: 0 0 8px;
+        letter-spacing: 0.02em;
+      }
+
+      header .subtitle {
+        font-size: 0.95rem;
+        color: var(--color-muted);
+        margin-bottom: 8px;
+      }
+
+      header .meta {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+      }
+
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 4px;
+        font-size: 1.15rem;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 4px;
+      }
+
+      h3 {
+        margin-top: 18px;
+        margin-bottom: 4px;
+        font-size: 1rem;
+        color: var(--color-accent);
+      }
+
+      p {
+        margin: 4px 0 8px;
+      }
+
+      ul {
+        margin: 4px 0 10px 1.2rem;
+        padding: 0;
+        line-height: 1.1em;
+      }
+
+      li {
+        margin-bottom: 3px;
+      }
+
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.9em;
+        background: #f5f5f5;
+        padding: 1px 4px;
+        border-radius: 3px;
+      }
+
+      .box {
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 8px 10px;
+        background: #fcfcfc;
+        margin: 8px 0 12px;
+        line-height: 1.05em;
+      }
+
+      .box-title {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
+
+      .small {
+        font-size: 0.85rem;
+        color: var(--color-muted);
+      }
+
+      .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .two-column > div {
+        flex: 1 1 260px;
+        min-width: 0;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 12px;
+        font-size: 0.77rem;
+        line-height: 1.2em;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid var(--color-border);
+        padding: 4px 6px;
+        vertical-align: top;
+      }
+
+      .table th {
+        background: #f5f5f5;
+        font-weight: 600;
+      }
+
+      .tag {
+        display: inline-block;
+        border-radius: 999px;
+        border: 1px solid var(--color-border);
+        padding: 1px 8px;
+        font-size: 0.75rem;
+        margin-right: 4px;
+        margin-bottom: 3px;
+      }
+
+      .placeholder {
+        font-style: italic;
+        color: var(--color-muted);
+      }
+
+      .pagebreak{
+        page-break-before:always
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          box-shadow: none;
+          padding: 24px 18px;
+        }
+        a[href]:after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Praxeological Meta-Structure (PMS) – Model Specification</h1>
+        <div class="subtitle">
+          A structural operator grammar for praxis, asymmetry, development and self-binding
+        </div>
+        <div class="meta">
+          Version: 1.1 &middot;
+          Spec basis: <span class="code-inline">PMS.yaml</span><br />
+          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.1 Thinking)<br />
+          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)
+        </div>
+      </header>
+
+      <!-- 1. Purpose & scope -->
+      <section id="purpose-scope">
+        <h2>1. Purpose and scope of this specification</h2>
+        <p>
+          This document specifies the <em>Praxeological Meta-Structure</em> (PMS) model in a concise,
+          technical form. It is based on the YAML file
+          <span class="code-inline">PMS.yaml</span> (with
+          <span class="code-inline">schema_version = "PMS_1.1"</span>) and makes its structure, concepts and
+          guardrails transparent for human readers and software systems.
+        </p>
+        <p>
+          PMS is a <strong>meta-model</strong>: it defines a small, irreducible set of structural operators
+          (Δ–Ψ) and describes how complex forms of praxis (awareness, coherence, responsibility, action,
+          dignity-in-practice, structural IA-patterns) arise from <strong>operator compositions</strong>.
+          It is <strong>non-physical, non-metaphysical and non-psychological</strong> and does not contain
+          a case schema or scoring system.
+        </p>
+        <p>The specification covers, in particular:</p>
+        <ul>
+          <li>
+            the <strong>schema_meta</strong> block (model name, status, intended use, normative
+            position, tragedy clause, dignity clause);
+          </li>
+          <li>
+            the <strong>meta-axioms Δ–Ψ</strong> with order, definitions, dependency relations and
+            operator layers (L1–L4);
+          </li>
+          <li>
+            the <strong>derived structures</strong> (Awareness, Coherence, Responsibility, Action,
+            Dignity-in-Practice, IA-patterns, self-model fixpoint);
+          </li>
+          <li>
+            <strong>example operator chains</strong> for minimal praxis, pattern formation, asymmetry
+            and self-binding;
+          </li>
+          <li>
+            the <strong>AI interface</strong> (welcome message, modes, guardrails and suggested questions)
+            for safe integration into agent architectures.
+          </li>
+        </ul>
+
+        <p>The intended use of this specification is threefold:</p>
+        <ul>
+          <li>
+            as a <strong>reference for theorists</strong> in philosophy, anthropology, social theory,
+            systems theory and AI;
+          </li>
+          <li>
+            as a <strong>technical artefact</strong> that can be cited, critiqued and extended in
+            research and teaching;
+          </li>
+          <li>
+            as a <strong>governance layer for software and AI systems</strong>, where the YAML file
+            acts as a single source of truth for the structural grammar of praxis.
+          </li>
+        </ul>
+
+        <div class="box">
+          <div class="box-title">Core idea</div>
+          <p class="small">
+            PMS does not analyse persons, traits or mental states. It defines a structural operator
+            grammar for praxis. Other models – such as praxeological action models (ACRPD / IA) –
+            MAY be derived from PMS but are <strong>not part</strong> of this specification.
+          </p>
+        </div>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 2. High-level YAML structure -->
+      <section id="structure">
+        <h2>2. High-level structure of the YAML model</h2>
+
+        <h3>2.1 Top-level keys</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Description</th>
+              <th>Role in the model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code-inline">schema_version</span></td>
+              <td>
+                Version string identifying the release of the YAML schema
+                (<span class="code-inline">"PMS_1.1"</span>). Ensures compatibility across updates and
+                allows unambiguous citation.
+              </td>
+              <td>Versioning / compatibility</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">schema_meta</span></td>
+              <td>
+                Contains name, status, authors, description, intended uses and explicit governance
+                constraints (<span class="code-inline">intended_use</span> with its
+                <span class="code-inline">allowed_profiles</span>,
+                <span class="code-inline">not_intended_for</span>,
+                <span class="code-inline">normative_position</span> with dignity clause and tragedy
+                clause, and the <span class="code-inline">terminology</span> block).
+              </td>
+              <td>Meta-information / governance / normative stance</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">core_principles</span></td>
+              <td>
+                Enumerates the core principles of the PMS model (praxeological focus, operator
+                minimality, generativity, temporal and asymmetry awareness, non-diagnostic use,
+                scenic/context-bound interpretation).
+              </td>
+              <td>Operational guardrails for all applications</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">pms_model_reference</span></td>
+              <td>
+                Contains the core structural definition of PMS: meta-axioms Δ–Ψ with order and
+                dependencies, operator layers (L1–L4) and the dependency table.
+              </td>
+              <td>Normative model: operators, layers, dependency graph</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">derived_structures</span></td>
+              <td>
+                Defines higher-level constructs that are derived from Δ–Ψ:
+                Awareness (A), Coherence (C), Responsibility (R), Action (E),
+                Dignity-in-Practice (D), the self-model fixpoint and IA-patterns.
+              </td>
+              <td>Derived grammar: axes, patterns, self-model</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">example_operator_chains</span></td>
+              <td>
+                Provides canonical examples of operator compositions (minimal praxis, pattern formation,
+                asymmetry emergence, developmental trajectories, reflexive praxis, self-binding chain).
+              </td>
+              <td>Illustrative examples and templates</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">ai_interface_pms</span></td>
+              <td>
+                Specifies how interactive agents should use PMS: onboarding text, usage modes, general
+                and AI-specific guardrails, and suggested structural questions.
+              </td>
+              <td>Agent interface / safety and interaction layer</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>2.2 Conceptual separation</h3>
+        <div class="two-column">
+          <div class="box">
+            <div class="box-title"><span class="code-inline">pms_model_reference</span></div>
+            <p class="small">
+              This block contains the complete structural definition of the PMS operator grammar:
+            </p>
+            <ul class="small">
+              <li>the eleven meta-axioms Δ–Ψ with order and dependencies;</li>
+              <li>
+                the four operator layers L1–L4 (ontological patterning, relational asymmetry &amp;
+                temporality, meta-structural reflexivity, self-binding fixpoint);
+              </li>
+              <li>the dependency table recording which axiom presupposes which others.</li>
+            </ul>
+            <p class="small">
+              In short: <strong>this block defines the operator system itself</strong>.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="box-title"><span class="code-inline">derived_structures</span></div>
+            <p class="small">
+              This block contains derived constructs that are <strong>computed</strong> from Δ–Ψ:
+            </p>
+            <ul class="small">
+              <li>the derived axes A, C, R, E, D with explicit formulas and generative reasoning;</li>
+              <li>the self-model fixpoint sequence;</li>
+              <li>
+                IA-patterns such as <span class="code-inline">IA_A&gt;&gt;E</span> and under-integration
+                patterns.
+              </li>
+            </ul>
+            <p class="small">
+              In short: this block defines <strong>what PMS can generate structurally</strong>, without
+              introducing case schemas or scores.
+            </p>
+          </div>
+        </div>
+
+        <h3>2.3 Terminology (from <span class="code-inline">schema_meta.terminology</span>)</h3>
+        <p>
+          The YAML defines three core terms that are used throughout this specification:
+        </p>
+        <ul>
+          <li>
+            <strong>Praxis</strong> – situated, meaningful action under asymmetry, constraints,
+            expectations, temporal extension and self-interpretation; modelled structurally via
+            operator compositions, not via subjective experience.
+          </li>
+          <li>
+            <strong>Meta-axiom</strong> – an irreducible structural operator (Δ–Ψ) that cannot be
+            derived from any other operator and participates in the generative grammar of praxis.
+          </li>
+          <li>
+            <strong>Operator composition</strong> – the ordered application of meta-axioms to generate
+            complex praxeological structures such as patterns, roles, trajectories, integration and
+            self-binding.
+          </li>
+        </ul>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 3. Core rules & guardrails -->
+      <section id="core-rules">
+        <h2>3. Core rules and guardrails</h2>
+
+        <h3>3.1 Core principles</h3>
+        <p>
+          The <span class="code-inline">core_principles</span> block defines non-negotiable rules for all
+          applications of PMS:
+        </p>
+        <ul>
+          <li>
+            <strong>P1 – Praxeological focus:</strong> PMS analyses enactments, roles and structures of
+            praxis, not persons as ontological or psychological entities.
+          </li>
+          <li>
+            <strong>P2 – Operator minimality:</strong> Δ–Ψ are treated as a minimal and complete set of
+            structural operators; each has explicit dependency relations.
+          </li>
+          <li>
+            <strong>P3 – Generativity:</strong> complex forms of praxis are derived from operator
+            compositions, not introduced as independent constructs.
+          </li>
+          <li>
+            <strong>P4 – Temporal and asymmetry awareness:</strong> asymmetry (Ω) and temporality (Θ)
+            are foundational; responsibility, maturity and dignity are always analysed under asymmetric
+            and temporal conditions.
+          </li>
+          <li>
+            <strong>P5 – Non-diagnostic use:</strong> PMS is not a diagnostic tool and must not be used
+            for clinical, therapeutic or forensic decisions.
+          </li>
+          <li>
+            <strong>P6 – Scenic, context-bound interpretation:</strong> all readings remain tied to
+            concrete scenes, roles and structures. Global person labels are out of scope.
+          </li>
+        </ul>
+
+        <h3>3.2 Normative position (ontology, dignity, tragedy)</h3>
+        <p>
+          The <span class="code-inline">schema_meta.normative_position</span> block specifies the
+          ontological stance of PMS:
+        </p>
+        <ul>
+          <li>
+            PMS is <strong>non-physical, non-metaphysical and non-psychological</strong>.
+            It makes no claims about consciousness, qualia or inner experience.
+          </li>
+          <li>
+            It formalises <strong>structural conditions of praxis</strong>, not mental states.
+          </li>
+          <li>
+            The <strong>dignity clause</strong> states that ontological dignity is never evaluated;
+            Dignity-in-Practice (D) is a structural parameter about enacted restraint and respect in
+            asymmetry, not about human ranking.
+          </li>
+          <li>
+            The <strong>tragedy clause</strong> states that structural maturity and responsibility do
+            not eliminate tragedy; PMS makes explicit how asymmetry, non-event and temporality create
+            unavoidable tragic tensions in praxis.
+          </li>
+        </ul>
+
+        <h3>3.3 Intended and forbidden uses</h3>
+        <p>
+          Under <span class="code-inline">schema_meta.intended_use</span>, PMS is declared suitable for:
+        </p>
+        <ul>
+          <li>theoretical reflection and structural action theory;</li>
+          <li>anthropology and praxeology;</li>
+          <li>systems theory and AI architecture / safety design;</li>
+          <li>model documentation and specification.</li>
+        </ul>
+        <p>
+          In the YAML, these uses are encoded as
+          <span class="code-inline">allowed_profiles</span>:
+          <span class="code-inline">theoretical_reflection</span>,
+          <span class="code-inline">structural_action_theory</span>,
+          <span class="code-inline">anthropology_and_praxeology</span>,
+          <span class="code-inline">systems_theory</span>,
+          <span class="code-inline">ai_architecture_and_safety</span> and
+          <span class="code-inline">model_documentation_and_specification</span>.
+        </p>
+        <p>
+          Under <span class="code-inline">not_intended_for</span>, the YAML explicitly forbids:
+        </p>
+        <ul>
+          <li>clinical diagnosis or personality typing;</li>
+          <li>mental health risk assessment;</li>
+          <li>automated moral judgement or individual person evaluation.</li>
+        </ul>
+
+        <div class="box">
+          <div class="box-title">Misuse hint</div>
+          <p class="small">
+            Any attempt to use PMS as a diagnostic or moral machine constitutes a structural misuse of
+            the model itself. Such misuse can be analysed as an inadult asymmetry at the level of model
+            governance.
+          </p>
+        </div>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 4. Operator system Δ–Ψ -->
+      <section id="operators">
+        <h2>4. Meta-axioms Δ–Ψ and operator layers</h2>
+
+        <h3>4.1 Meta-axioms</h3>
+        <p>
+          The block <span class="code-inline">pms_model_reference.meta_axioms</span> lists the eleven
+          meta-axioms Δ–Ψ, each with:
+        </p>
+        <ul>
+          <li><strong>id</strong> (symbol), <strong>name</strong>, <strong>order</strong>,</li>
+          <li><strong>definition</strong>, <strong>depends_on</strong>, <strong>provides</strong>,</li>
+          <li>short <strong>examples</strong> from praxis.</li>
+        </ul>
+        <p>
+          Axioms 1–11 form a <strong>non-interchangeable sequence</strong>; each operator presupposes
+          those that come before it and enables those that follow.
+        </p>
+
+        <h3>4.2 Operator layers (L1–L4)</h3>
+        <p>
+          The <span class="code-inline">operator_layers</span> block groups the axioms into four layers:
+        </p>
+        <ul>
+          <li>
+            <strong>L1 – Ontological patterning</strong><br />
+            (<span class="code-inline">["Δ","∇","□","Λ","Α"]</span>):<br />
+            difference, impulse, frame, non-event and attractor formation.
+          </li>
+          <li>
+            <strong>L2 – Relational asymmetry and temporality</strong><br />
+            (<span class="code-inline">["Ω","Θ"]</span>):<br />
+            asymmetry and temporal trajectories.
+          </li>
+          <li>
+            <strong>L3 – Meta-structural reflexivity</strong><br />
+            (<span class="code-inline">["Φ","Χ","Σ"]</span>):<br />
+            recontextualization, distance and integration.
+          </li>
+          <li>
+            <strong>L4 – Self-binding fixpoint</strong><br />
+            (<span class="code-inline">["Ψ"]</span>):<br />
+            self-binding and identity as structural fixpoint.
+          </li>
+        </ul>
+
+        <h3>4.3 Dependency table</h3>
+        <p>
+          The <span class="code-inline">dependency_table</span> redundantly encodes the logical order:
+          each entry states <span class="code-inline">axiom</span>, its
+          <span class="code-inline">order</span>,
+          <span class="code-inline">depends_on</span> and what it
+          <span class="code-inline">provides</span>.
+          This allows software to validate operator chains, check completeness and reason about possible
+          compositions.
+        </p>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 5. Derived structures -->
+      <section id="derived-structures">
+        <h2>5. Derived structures (A, C, R, E, D, IA, self-model)</h2>
+
+        <h3>5.1 Derived axes</h3>
+        <p>
+          The <span class="code-inline">derived_structures.derived_axes</span> block defines five
+          structural axes as operator compositions:
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Axis</th>
+              <th>Symbol</th>
+              <th>Formula</th>
+              <th>Short definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Awareness</td>
+              <td align="center">A</td>
+              <td><span class="code-inline">["Θ","□","Δ"]</span></td>
+              <td>Sustained, framed differentiation across time.</td>
+            </tr>
+            <tr>
+              <td>Coherence</td>
+              <td align="center">C</td>
+              <td><span class="code-inline">["Θ","Λ","□","∇"]</span></td>
+              <td>Temporally stabilised structuring of impulse and expectation within a frame.</td>
+            </tr>
+            <tr>
+              <td>Responsibility</td>
+              <td align="center">R</td>
+              <td><span class="code-inline">["Ψ","Φ","Θ","Ω"]</span></td>
+              <td>Self-binding orientation toward asymmetry across time and recontextualization.</td>
+            </tr>
+            <tr>
+              <td>Action / Enactment</td>
+              <td align="center">E</td>
+              <td><span class="code-inline">["Σ","Θ","∇"]</span></td>
+              <td>Integrated realisation of directedness across time.</td>
+            </tr>
+            <tr>
+              <td>Dignity in practice</td>
+              <td align="center">D</td>
+              <td><span class="code-inline">["Ψ","Χ","Ω"]</span></td>
+              <td>Self-bound reflective restraint and protection in asymmetrical relations.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          For each axis, the YAML stores a short generative reasoning and notes that these constructs
+          are <strong>structural, not psychological</strong>.
+        </p>
+
+        <h3>5.2 Self-model fixpoint</h3>
+        <p>
+          The <span class="code-inline">self_model</span> section defines the PMS self-model as a
+          structural fixpoint:
+        </p>
+        <div class="box small">
+          <span class="code-inline">
+            Self = Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
+          </span>
+        </div>
+        <p>
+          The YAML records this as an ordered <span class="code-inline">formula_sequence</span> and lists
+          implications (selfhood as result of praxis, identity as stable self-binding, no claims about
+          subjectivity).
+        </p>
+
+        <h3>5.3 IA-patterns</h3>
+        <p>
+          The <span class="code-inline">ia_patterns</span> block defines structural distortion patterns
+          (IA) as specific operator constellations, e.g.:
+        </p>
+        <ul>
+          <li>
+            <span class="code-inline">IA_A&gt;&gt;E</span> –
+            excessive distance between Awareness and Enactment, with basis
+            <span class="code-inline">["Ω","Α","Φ"]</span>;
+          </li>
+          <li>
+            <span class="code-inline">IA_Sigma_low</span> – fragmented integration, modelled as high Φ
+            and low Σ.
+          </li>
+        </ul>
+        <p>
+          Each pattern stores its structural basis, generative mechanism and effects on the derived axes.
+          All IA-entries are explicitly labelled as <strong>praxeological patterns, not person types</strong>.
+        </p>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 6. Example operator chains & AI interface -->
+      <section id="ai-interface">
+        <h2>6. Example operator chains and AI interface</h2>
+
+        <h3>6.1 Example chains</h3>
+        <p>
+          The <span class="code-inline">example_operator_chains</span> section contains canonical
+          sequences such as:
+        </p>
+        <ul>
+          <li><strong>minimal_praxis</strong>: <span class="code-inline">["□","∇","Δ"]</span>;</li>
+          <li><strong>pattern_formation</strong>: <span class="code-inline">["Α","Λ","□","∇","Δ"]</span>;</li>
+          <li>
+            <strong>reflexive_praxis</strong>:
+            <span class="code-inline">["Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]</span>;
+          </li>
+          <li><strong>self_binding_chain</strong>: full Ψ–Δ sequence.</li>
+        </ul>
+        <p>
+          These chains serve as templates for human reasoning and as test cases for software that loads
+          and operates on the PMS grammar.
+        </p>
+
+        <h3>6.2 AI interface and guardrails</h3>
+        <p>
+          The <span class="code-inline">ai_interface_pms</span> block defines:
+        </p>
+        <ul>
+          <li>a <strong>welcome_message</strong> that explains PMS to users;</li>
+          <li>
+            explicit <strong>modes</strong> for different uses:
+            <ul>
+              <li>
+                <span class="code-inline">axiomatic</span> – axiomatic / theory mode (Δ–Ψ and their
+                compositions);
+              </li>
+              <li>
+                <span class="code-inline">derived_axes_inspection</span> – mapping PMS structures to the
+                five derived axes (A, C, R, E, D);
+              </li>
+              <li>
+                <span class="code-inline">ai_architecture</span> – using PMS operators as conceptual
+                building blocks for agent design and safety, without anthropomorphising.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>general guardrails</strong> (no mental state or trait inference, no person ranking,
+            structural focus on enactments and roles);
+          </li>
+          <li>
+            <strong>AI-specific guardrails</strong> (no anthropomorphising; Ψ in machines refers to policy
+            and constraint stability, not consciousness; clear separation between structural agency models
+            and real human vulnerability);
+          </li>
+          <li>
+            a list of <strong>suggested questions</strong> that guide structural reflection, such as:
+            <ul>
+              <li>“What structural operators are involved in this pattern of praxis?”</li>
+              <li>“Which asymmetries (Ω) and temporal trajectories (Θ) are visible?”</li>
+              <li>“Where do recontextualization (Φ), distance (Χ) and integration (Σ) appear or fail?”</li>
+              <li>
+                “How would this configuration project onto the derived axes (Awareness, Coherence,
+                Responsibility, Action, Dignity-in-Practice)?”
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Together, these elements allow LLMs and other agents to load PMS as a
+          <strong>governance layer</strong> and to keep applications within the intended structural scope.
+        </p>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 7. Implementation & licensing -->
+      <section id="implementation">
+        <h2>7. Implementation notes and licensing</h2>
+
+        <h3>7.1 YAML file and integration</h3>
+        <p>
+          The official PMS YAML specification is provided as:
+        </p>
+        <p>
+          <span class="code-inline">PMS.yaml</span>
+        </p>
+        <p>
+          This file constitutes the <strong>single source of truth</strong> for:
+        </p>
+        <ul>
+          <li>the PMS operator system (Δ–Ψ);</li>
+          <li>the derived structures (A, C, R, E, D, IA, self-model);</li>
+          <li>the AI interface and guardrails for structural use.</li>
+        </ul>
+        <p>
+          Implementations SHOULD consume this YAML directly rather than re-implementing parts manually.
+          It is suitable for:
+        </p>
+        <ul>
+          <li>formal reasoning about structural operator chains;</li>
+          <li>simulation and analysis of praxeological patterns;</li>
+          <li>AI systems that require transparent, non-psychological reasoning templates;</li>
+          <li>research tools and teaching materials in structural action theory.</li>
+        </ul>
+
+        <h4>7.1.1 Recommended bootstrap for LLM-based agents (non-normative)</h4>
+        <p>
+          After loading the YAML, an LLM-based agent SHOULD run a short system prompt that:
+        </p>
+        <ul>
+          <li>parses the YAML and activates the <span class="code-inline">ai_interface_pms</span> block;</li>
+          <li>outputs the <span class="code-inline">welcome_message</span> to the user;</li>
+          <li>applies all guardrails and suggested structural questions when using the model.</li>
+        </ul>
+
+        <h3>7.2 Citation and license</h3>
+
+        <p>
+          When referencing the Praxeological Meta-Structure (PMS), please cite both the
+          theoretical paper and this model specification:
+        </p>
+
+        <p class="small">
+          <strong>Primary reference:</strong><br />
+          T. Zöller (2025): <em>Towards a Praxeological Meta-Structure Theory.</em>
+        </p>
+
+        <p class="small">
+          <strong>Technical reference:</strong><br />
+          <em>PMS.yaml – Axiomatic Operator Schema</em><br />
+          YAML Specification and Model Definition.
+        </p>
+
+        <p>
+          <strong>License:</strong><br />
+          Unless otherwise stated on the distribution page, the YAML file and this model
+          specification are released under a
+          <strong>Creative Commons Attribution–NonCommercial–ShareAlike (CC BY-NC-SA)</strong> license:
+        </p>
+
+        <ul>
+          <li>Free to use for research, teaching and non-commercial applications.</li>
+          <li>Commercial use requires explicit permission.</li>
+          <li>Derivative works must attribute the original author and share under the same license.</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
