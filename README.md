@@ -8,6 +8,8 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 * Non-clinical, non-diagnostic
 * Designed for theory, systems thinking and AI governance / architecture
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17897221.svg)](https://doi.org/10.5281/zenodo.17897221)  
+
 ---
 
 ## Repository contents
@@ -331,3 +333,4 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**.
+
