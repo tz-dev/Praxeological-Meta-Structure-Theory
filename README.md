@@ -8,7 +8,7 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 * Non-clinical, non-diagnostic
 * Designed for theory, systems thinking and AI governance / architecture
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17897221.svg)](https://doi.org/10.5281/zenodo.17897221)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17904891.svg)](https://doi.org/10.5281/zenodo.17904891)  
 
 ---
 
