@@ -132,6 +132,8 @@ All of this is encoded explicitly in `schema_meta.intended_use` and `schema_meta
 
 A dedicated GPT exists for interacting with PMS as a structural theory assistant. It can explain and analyse Δ–Ψ operator chains, derived axes (A/C/R/E/D), IA-patterns, the self-model fixpoint, and PMS-based AI architectures.
 
+https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant
+
 GPT description:
 
 > A structural theory assistant based on the Praxeological Meta-Structure (PMS) model (Δ–Ψ). It analyses operator chains, derived axes, IA-patterns, and the self-model fixpoint. Designed for theory, AI architecture, and formal reasoning — not diagnosis or person-evaluation.
@@ -333,4 +335,5 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**.
+
 
