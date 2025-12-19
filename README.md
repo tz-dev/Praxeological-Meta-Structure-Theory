@@ -8,7 +8,7 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 * Non-clinical, non-diagnostic
 * Designed for theory, systems thinking and AI governance / architecture
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17904891.svg)](https://doi.org/10.5281/zenodo.17904891)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17904891.svg)](https://doi.org/10.5281/zenodo.17904891)
 
 ---
 
@@ -132,15 +132,13 @@ All of this is encoded explicitly in `schema_meta.intended_use` and `schema_meta
 
 A dedicated GPT exists for interacting with PMS as a structural theory assistant. It can explain and analyse Δ–Ψ operator chains, derived axes (A/C/R/E/D), IA-patterns, the self-model fixpoint, and PMS-based AI architectures.
 
-https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant
-
 GPT description:
 
 > A structural theory assistant based on the Praxeological Meta-Structure (PMS) model (Δ–Ψ). It analyses operator chains, derived axes, IA-patterns, and the self-model fixpoint. Designed for theory, AI architecture, and formal reasoning — not diagnosis or person-evaluation.
 
 This GPT follows the guardrails defined in `schema_meta.not_intended_for` and works exclusively at the structural level (operators, roles, frames, asymmetries, trajectories), never on psychological or diagnostic interpretations.
 
-*(The exact GPT link may change over time; see the repository or associated websites for current integration options.)*
+*(See “Links & Resources” above for the current GPT entry and related tooling.)*
 
 ---
 
@@ -260,6 +258,29 @@ The `examples/` directory is reserved for code or case-style examples that demon
 
 ---
 
+## Links & Resources
+
+*Maturity in Practice* is situated within a broader **praxeological ecosystem** that connects anthropological theory, formal operator models, applied analyses, and executable specifications.
+
+The resources below provide different **points of access** into that ecosystem: from the book and its conceptual foundations, to related model architectures, reference implementations, and interactive tools. Together, they form a coherent field of inquiry rather than a collection of isolated artifacts.
+
+| Category      | Resource                                                                                                                       | Description                                              |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| Model website | [pms-theory.com](https://pms-theory.com)                                                                                       | PMS theory reference                                     |
+| Book websites | [maturity-in-practice.com](https://maturity-in-practice.com)                                                                   | Praxeological Anthropology — English edition (this page) |
+|               | [reife-im-vollzug.de](https://reife-im-vollzug.de)                                                                             | Praxeologische Anthropologie — Deutsche Ausgabe          |
+|               | [pms-stack.com](https://pms-stack.com)                                                                                         | PMS-STACK reference architecture                         |
+| Amazon        | [Maturity in Practice (EN)](https://www.amazon.com/dp/B0G6G7V38P)                                                              | Book — English edition                                   |
+|               | [Reife im Vollzug (DE)](https://www.amazon.de/dp/B0G4SPBDQD)                                                                   | Buch — Deutsche Ausgabe                                  |
+|               | [PMS-STACK](https://www.amazon.com/dp/B0G6G7V38P)                                                                              | Book — PMS-STACK reference architecture                  |
+| GitHub        | [Praxeological Meta-Structure Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                           | Canonical PMS grammar, theory & YAML definitions         |
+|               | [Maturity in Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                         | Book sources, applied praxeological anthropology         |
+|               | [PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                     | Quantum computing paper using PMS operators              |
+| Custom GPTs   | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                            | Interactive PMS.yaml exploration & validation            |
+|               | [Maturity in Action](https://chatgpt.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant             |
+
+---
+
 ## Citation
 
 When referencing the Praxeological Meta-Structure (PMS), please cite both the theoretical paper and the model specification:
@@ -292,8 +313,7 @@ This applies to:
 
 ### 2. Model content & documentation
 
-Licensed under
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**
+Licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**
 → see `LICENSE-CC-BY-4.0`
 → Full license text: [https://creativecommons.org/licenses/by/4.0/legalcode.en](https://creativecommons.org/licenses/by/4.0/legalcode.en)
 
@@ -334,6 +354,4 @@ Before submitting changes, please:
 Extensions (e.g., new example operator chains, additional diagrams, integration examples) are encouraged, as long as they:
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
-* include proper attribution under **CC BY 4.0**.
-
-
+* include proper attribution under **CC BY 4.0**
