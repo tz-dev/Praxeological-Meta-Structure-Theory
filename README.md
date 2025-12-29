@@ -264,20 +264,20 @@ The `examples/` directory is reserved for code or case-style examples that demon
 
 The resources below provide different **points of access** into that ecosystem: from the book and its conceptual foundations, to related model architectures, reference implementations, and interactive tools. Together, they form a coherent field of inquiry rather than a collection of isolated artifacts.
 
-| Category      | Resource                                                                                                                       | Description                                              |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| Model website | [pms-theory.com](https://pms-theory.com)                                                                                       | PMS theory reference                                     |
-| Book websites | [maturity-in-practice.com](https://maturity-in-practice.com)                                                                   | Praxeological Anthropology — English edition (this page) |
-|               | [reife-im-vollzug.de](https://reife-im-vollzug.de)                                                                             | Praxeologische Anthropologie — Deutsche Ausgabe          |
-|               | [pms-stack.com](https://pms-stack.com)                                                                                         | PMS-STACK reference architecture                         |
-| Amazon        | [Maturity in Practice (EN)](https://www.amazon.com/dp/B0G6G7V38P)                                                              | Book — English edition                                   |
-|               | [Reife im Vollzug (DE)](https://www.amazon.de/dp/B0G4SPBDQD)                                                                   | Buch — Deutsche Ausgabe                                  |
-|               | [PMS-STACK](https://www.amazon.com/dp/B0G6G7V38P)                                                                              | Book — PMS-STACK reference architecture                  |
-| GitHub        | [Praxeological Meta-Structure Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                           | Canonical PMS grammar, theory & YAML definitions         |
-|               | [Maturity in Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                         | Book sources, applied praxeological anthropology         |
-|               | [PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                     | Quantum computing paper using PMS operators              |
-| Custom GPTs   | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                            | Interactive PMS.yaml exploration & validation            |
-|               | [Maturity in Action](https://chatgpt.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant             |
+| Category | Resource | Description |
+| --- | --- | --- |
+| Model website | https://pms-theory.netlify.app | PMS theory reference |
+| Book websites | https://maturity-in-practice.netlify.app | Praxeological Anthropology — English edition |
+|  | https://reife-im-vollzug.netlify.app | Praxeologische Anthropologie — Deutsche Ausgabe |
+|  | https://pms-stack.netlify.app | PMS-STACK reference architecture |
+| Amazon | https://www.amazon.com/dp/B0G6G7V38P | Book — English edition (Maturity in Practice) |
+|  | https://www.amazon.de/dp/B0G4SPBDQD | Buch — Deutsche Ausgabe (Reife im Vollzug) |
+|  | https://www.amazon.com/dp/B0G6G7V38P | Book — PMS-STACK reference architecture |
+| GitHub | https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS grammar, theory & YAML definitions |
+|  | https://github.com/tz-dev/Maturity-in-Practice | Book sources, applied praxeological anthropology |
+|  | https://github.com/tz-dev/PMS-QC | PMS-QC — this repository |
+| Custom GPTs | https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant | Interactive PMS.yaml exploration & validation |
+|  | https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology | Applied praxeological anthropology assistant |
 
 ---
 
@@ -355,3 +355,4 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
