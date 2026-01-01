@@ -275,7 +275,8 @@ The resources below provide different **points of access** into that ecosystem: 
 |  | https://www.amazon.com/dp/B0G6G7V38P | Book — PMS-STACK reference architecture |
 | GitHub | https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS grammar, theory & YAML definitions |
 |  | https://github.com/tz-dev/Maturity-in-Practice | Book sources, applied praxeological anthropology |
-|  | https://github.com/tz-dev/PMS-QC | PMS-QC — this repository |
+|  | https://github.com/tz-dev/PMS-QC | PMS-QC — Praxeological Meta-Structure for Quantum Computing |
+|  | https://github.com/tz-dev/PMS-LOGIC | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects |
 | Custom GPTs | https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant | Interactive PMS.yaml exploration & validation |
 |  | https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology | Applied praxeological anthropology assistant |
 
@@ -355,4 +356,5 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
