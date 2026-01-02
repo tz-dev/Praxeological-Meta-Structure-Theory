@@ -1,9 +1,15 @@
+pms_entry_condition:
+  requirement: >
+    Any use of PMS presupposes acceptance of distance (Χ), reversibility,
+    and dignity-in-practice (D). This condition applies to application, not
+    to critique or rejection. Applications that suspend these conditions
+    are formally invalid as PMS.
 schema_version: "PMS_1.1"
 schema_meta:
   model_name: "Praxeological Meta-Structure"
   model_short: "PMS"
   status: "draft"
-  last_updated: "2025-12-07"
+  last_updated: "2026-01-02"
   authors:
     - name: "T. Zöller"
       role: "originator"
@@ -47,6 +53,13 @@ schema_meta:
       Structural maturity and responsibility do not eliminate tragedy. PMS makes
       explicit how asymmetry, non-event and temporality create unavoidable
       tragic tensions in praxis.
+    self_binding_clause: >
+      Any application of PMS is itself subject to PMS. Analyses that suspend
+      distance (Χ), self-binding (Ψ), or dignity-in-practice (D) in order to
+      enforce truth, clarity or asymmetry violate the model's own conditions
+      of validity. PMS may be criticized, rejected or misapplied, but it can
+      only be structurally betrayed by adherents who retain its language while
+      abandoning its self-binding requirements.
   terminology:
     praxis: >
       Situated, meaningful action under asymmetry, constraints, expectations,
@@ -487,6 +500,8 @@ ai_interface_pms:
       - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
       - "Treat asymmetry (Ω) as a structural fact, not as moral judgement."
       - "Do not use PMS to rank or compare human beings."
+      - "Any use of PMS that frames resistance, disagreement or non-alignment as immaturity per se constitutes a misuse of the model."
+      - "Truth claims derived from PMS must not be operationalized without maintaining reversibility, distance (Χ) and dignity-in-practice (D)."
     ai_specific:
       - "PMS operators may be used as abstract modules, not as evidence of subjective experience."
       - "Self-binding (Ψ) in artificial systems refers to policy and constraint stability, not to consciousness."
