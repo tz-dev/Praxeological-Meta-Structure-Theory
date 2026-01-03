@@ -264,19 +264,19 @@ The `examples/` directory is reserved for code or case-style examples that demon
 
 The resources below are organized by **structural role** within that ecosystem.
 
-| Category | Resource | Structural Role |
-| --- | --- | --- |
-| **Canonical Model** | https://pms-theory.netlify.app | Authoritative reference for the Praxeological Meta-Structure (Δ–Ψ); operator grammar, axioms, and derived axes |
-| **Foundational Books** | https://maturity-in-practice.netlify.app | *Maturity in Practice* — applied praxeological anthropology (English edition) |
-|  | https://reife-im-vollzug.netlify.app | *Reife im Vollzug* — applied praxeological anthropology (German edition) |
-|  | https://pms-stack.netlify.app | PMS-STACK — reference architecture for layered PMS applications |
-| **Core Repositories** | https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS theory, operator definitions, YAML / JSON schemas |
-|  | https://github.com/tz-dev/Maturity-in-Practice | Source materials for praxeological anthropology (book + applications) |
-| **Formal Applications** | https://github.com/tz-dev/PMS-QC | PMS-QC — PMS applied to quantum computing structures and non-classical computation |
-|  | https://github.com/tz-dev/PMS-LOGIC | PMS–LOGIC — post-moral responsibility, logical limits, and non-normative attribution |
-|  | https://github.com/tz-dev/PMS-ANTICIPATION | PMS–ANTICIPATION — anticipatory praxis under non-event (Λ), asymmetry (Ω), and temporality (Θ) |
-| **Interactive Tools** | https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant | Interactive exploration and validation of `PMS.yaml` |
-|  | https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology | Applied praxeological anthropology assistant |
+| Category        | Resource | Description |
+|-----------------|----------|-------------|
+| Model website   | https://pms-theory.netlify.app | PMS theory reference |
+| Book websites   | https://maturity-in-practice.netlify.app | Praxeological Anthropology — English edition |
+|                 | https://reife-im-vollzug.netlify.app | Praxeologische Anthropologie — Deutsche Ausgabe |
+|                 | https://pms-stack.netlify.app | PMS-STACK reference architecture |
+| GitHub          | https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS grammar, theory & YAML definitions |
+|                 | https://github.com/tz-dev/Maturity-in-Practice | Book sources, applied praxeological anthropology |
+|                 | https://github.com/tz-dev/PMS-QC | PMS-QC — Praxeological Meta-Structure for Quantum Computing |
+|                 | https://github.com/tz-dev/PMS-LOGIC | PMS–LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects |
+|                 | https://github.com/tz-dev/PMS-ANTICIPATION | PMS–ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
+| Custom GPTs     | https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant | Interactive PMS.yaml exploration & validation |
+|                 | https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology | Applied praxeological anthropology assistant |
 
 ---
 
@@ -354,6 +354,7 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
 
 
