@@ -270,10 +270,10 @@ The resources below are organized by **structural role** within that ecosystem.
 | Book websites | https://maturity-in-practice.netlify.app | Praxeological Anthropology — English edition |
 |  | https://reife-im-vollzug.netlify.app | Praxeologische Anthropologie — Deutsche Ausgabe |
 |  | https://pms-stack.netlify.app | PMS-STACK reference architecture |
-| Amazon | https://www.amazon.com/dp/B0G6G7V38P | Book — English edition (Maturity in Practice) |
-|  | https://www.amazon.de/dp/B0G4SPBDQD | Buch — Deutsche Ausgabe (Reife im Vollzug) |
-|  | https://www.amazon.com/dp/B0G6G7V38P | Book — PMS-STACK reference architecture |
-| GitHub | https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS grammar, theory & YAML definitions |
+| Amazon | https://www.amazon.com/dp/B0G4XBKNNR | *Maturity in Practice: A Praxeological Anthropology* — English edition |
+|  | https://www.amazon.de/dp/B0G4SPBDQD | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe |
+|  | https://www.amazon.com/dp/B0G6G7V38P | *PMS-STACK — A Praxeological Operating System Architecture* |
+| GitHub (papers)| https://github.com/tz-dev/Praxeological-Meta-Structure-Theory | Canonical PMS grammar, theory & YAML definitions |
 |  | https://github.com/tz-dev/Maturity-in-Practice | Book sources, applied praxeological anthropology |
 |  | https://github.com/tz-dev/PMS-QC | PMS-QC — Praxeological Meta-Structure for Quantum Computing |
 |  | https://github.com/tz-dev/PMS-LOGIC | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects |
@@ -357,6 +357,7 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
 
 
