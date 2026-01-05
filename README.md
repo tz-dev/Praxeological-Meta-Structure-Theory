@@ -128,6 +128,24 @@ All of this is encoded explicitly in `schema_meta.intended_use` and `schema_meta
 
 ---
 
+## Table of the 11 Operators (Δ–Ψ)
+
+| Order | Operator | Name                | Short definition                                                                              | Depends on | Provides (selection)                                                                          | Examples (selection)                                                                                                      |
+| ----: | :------: | ------------------- | --------------------------------------------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+|     1 |     Δ    | Difference          | Minimal structural distinction enabling any differentiation.                                  | –          | boundary_formation; object_emergence; structural_contrast                                     | self vs. other; inside vs. outside a role; allowed vs. forbidden action                                                   |
+|     2 |     ∇    | Impulse             | Directional tension/drive arising from difference.                                            | Δ          | activation; orientation; energetic_gradient; proto_agency                                     | desire triggered by perceived lack; urge to correct an imbalance; move toward/away from a signal                          |
+|     3 |     □    | Frame               | Contextual structure that constrains and shapes impulses.                                     | Δ, ∇       | context; normative_or_spatial_boundaries; relevance_structuring; role_space                   | institutional rules; family role expectations; conversation context                                                       |
+|     4 |     Λ    | Non-Event           | Structured absence: meaningful failure or delay of an expected occurrence within a frame.     | □          | expectation; counterfactual_structure; tension_through_absence                                | a promised reply that never arrives; silence where a response is expected; postponed decision that reshapes the situation |
+|     5 |     Α    | Attractor           | Recurrent pattern/stabilization built from repeated framed interactions and non-events.       | Δ, ∇, □, Λ | habit_formation; stability; path_dependence; role_script_emergence                            | repeated avoidance of conflict; reliable punctuality; stable institutional routine                                        |
+|     6 |     Ω    | Asymmetry           | Structural imbalance establishing directionality of power, exposure, capacity, or obligation. | Α          | role_differentiation; responsibility_gradients; vulnerability_structures                      | parent–child relation; mentor–apprentice dynamics; leader–follower position                                               |
+|     7 |     Θ    | Temporality         | Temporal structuring enabling trajectories, commitments, and development.                     | Ω, Α       | sequence_and_trajectory; persistence; anticipation_and_delay; developmental_arcs              | long-term responsibility; accumulating consequences; ongoing development of a role                                        |
+|     8 |     Φ    | Recontextualization | Transformation by embedding an existing structure into a new frame.                           | Θ, Ω, □    | adaptation; reinterpretation; developmental_change; pattern_shift                             | reframing conflict as misunderstanding; seeing failure as a learning step; renegotiating role expectations                |
+|     9 |     Χ    | Distance            | Reflective withdrawal that attenuates immediate impulses and patterns.                        | Φ, Θ, □    | regulation; inhibition; reflection_and_meta_position                                          | pausing before reacting; stepping out of a role to reflect; deliberately suspending a habitual script                     |
+|    10 |     Σ    | Integration         | Synthesis of disparate/conflicting elements into a coherent whole.                            | Χ, Φ       | coherence; resolution_of_contradictions; multi_level_coordination; maturity_of_praxis         | aligning motives and roles; integrating emotional impulse and norm; forming a coherent action plan                        |
+|    11 |     Ψ    | Self-Binding        | Identity formation through commitment to integrated structures over time.                     | Σ, Θ, Χ    | self_model; responsibility_as_self_commitment; stable_normativity; autobiographical_coherence | holding oneself accountable; owning a caregiving role; long-term identity commitments and promises                        |
+
+---
+
 ## PMS Model Assistant (GPT)
 
 A dedicated GPT exists for interacting with PMS as a structural theory assistant. It can explain and analyse Δ–Ψ operator chains, derived axes (A/C/R/E/D), IA-patterns, the self-model fixpoint, and PMS-based AI architectures.
@@ -359,6 +377,7 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
 
 
