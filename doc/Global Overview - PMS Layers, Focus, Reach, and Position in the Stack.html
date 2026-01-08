@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Overview: PMS Layers, Focus, Reach, and Position in the Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --color-text: #111;
+        --color-muted: #555;
+        --color-accent: #333;
+        --color-border: #ddd;
+        --color-bg: #fafafa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        background: white;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+
+      blockquote {
+        margin: 0 0 16px;
+        padding: 0 1em;
+        color: #57606a;
+        border-left: 0.25em solid #d0d7de;
+      }
+
+      .page {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 32px 24px 64px;
+        background: white;
+      }
+
+      header {
+        padding-bottom: 16px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 1.9rem;
+        margin: 0 0 8px;
+        letter-spacing: 0.02em;
+      }
+
+      header .subtitle {
+        font-size: 0.95rem;
+        color: var(--color-muted);
+        margin-bottom: 8px;
+      }
+
+      header .meta {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+      }
+
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 4px;
+        font-size: 1.15rem;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 4px;
+      }
+
+      h3 {
+        margin-top: 18px;
+        margin-bottom: 4px;
+        font-size: 1rem;
+        color: var(--color-accent);
+      }
+
+      hr {
+        color: #efefef;
+        margin: 25px 0;
+        border-width: 1px solid #efefef;
+      }
+
+      p {
+        margin: 4px 0 8px;
+      }
+
+      ul {
+        margin: 4px 0 10px 1.2rem;
+        padding: 0;
+        line-height: 1.1em;
+      }
+
+      li {
+        margin-bottom: 3px;
+      }
+
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.9em;
+        background: #f5f5f5;
+        padding: 1px 4px;
+        border-radius: 3px;
+      }
+
+      .box {
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 8px 10px;
+        background: #fcfcfc;
+        margin: 8px 0 12px;
+        line-height: 1.05em;
+      }
+
+      .box-title {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
+
+      .small {
+        font-size: 0.85rem;
+        color: var(--color-muted);
+      }
+
+      .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .two-column > div {
+        flex: 1 1 260px;
+        min-width: 0;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 12px;
+        font-size: 0.77rem;
+        line-height: 1.2em;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid var(--color-border);
+        padding: 4px 6px;
+        vertical-align: top;
+      }
+
+      .table th {
+        background: #f5f5f5;
+        font-weight: 600;
+      }
+
+      .tag {
+        display: inline-block;
+        border-radius: 999px;
+        border: 1px solid var(--color-border);
+        padding: 1px 8px;
+        font-size: 0.75rem;
+        margin-right: 4px;
+        margin-bottom: 3px;
+      }
+
+      .placeholder {
+        font-style: italic;
+        color: var(--color-muted);
+      }
+
+      .pagebreak{
+        page-break-before:always
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          box-shadow: none;
+          padding: 24px 18px;
+        }
+        a[href]:after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Global Overview: PMS Layers, Focus, Reach, and Position in the Stack</h1>
+        <h2><em>Global Overview: PMS Layers, Focus, Reach, and Position in the Stack</em></h2>
+      </header>
+      <p>This document provides a single, navigable map of the PMS ecosystem: what each repository is for, what it ships, how it relates to the canonical PMS grammar, and where it sits in the overall stack.</p>
+      <p>If you are new to PMS, the key idea is simple:</p>
+      <ul>
+      <li><strong>PMS</strong> defines a <strong>canonical operator grammar</strong> (Δ–Ψ) for structural praxeological analysis.</li>
+      <li>The <strong>domain repositories</strong> (ANTICIPATION, CRITIQUE, CONFLICT, EDEN, SEX, LOGIC) apply that grammar to specific regimes without modifying it.</li>
+      <li><strong>MIP / IA</strong> is a <strong>downstream governance layer</strong>: it evaluates whether an analysis artifact is responsible, scoped, and misuse-resistant.</li>
+      <li><strong>PMS–QC</strong> is a <strong>specialized bridge</strong>: a structural mapping layer for quantum computing (not governance, not moral discourse).</li>
+      </ul>
+      <p>This overview is designed to prevent two common confusions:</p>
+      <ol>
+      <li>Mixing up <strong>PMS as a theory object</strong> (“PMS Base”) with <strong>PMS as a repository</strong> (“PMS Theory / Repo”).</li>
+      <li>Treating domain applications as if they were allowed to redefine operators or dependencies (they are not).</li>
+      </ol>
+      <hr>
+      <h2>1) Macro Overview Table (Stack-Level) — with Primary Deliverables</h2>
+      <table class="table">
+      <thead>
+      <tr>
+      <th>Model / Repo</th>
+      <th>Primary Deliverables</th>
+      <th>Artifact Type</th>
+      <th>Stack Position</th>
+      <th>Central Question</th>
+      <th>Structural Focus</th>
+      <th>Operators Under Load (typical)</th>
+      <th>Typical Transition / Docking</th>
+      </tr>
+      </thead>
+      <tbody><tr>
+      <td><strong>PMS (Theory / Repo)</strong></td>
+      <td><strong>Paper (MD/HTML/PDF/TEX)</strong> · <strong>Canonical YAML (<code>PMS.yaml</code>)</strong> · <strong>Spec (HTML/PDF)</strong> · <strong>JSON mirror</strong> · <strong>Diagrams (Mermaid/PlantUML)</strong> · <strong>Code examples (Python)</strong></td>
+      <td><strong>Canonical Core</strong> (source-of-truth repository)</td>
+      <td><strong>Root / Source of Truth</strong></td>
+      <td><em>What is PMS exactly—formally and implementably?</em></td>
+      <td>Publishes the operator grammar <strong>Δ–Ψ</strong>, dependency hygiene, derived axes (<strong>A/C/R/E/D</strong>), IA patterns, self-model, and explicit guardrails (“what PMS is not”).</td>
+      <td>all (Δ–Ψ)</td>
+      <td>→ every downstream repo docks to this grammar and its guardrails</td>
+      </tr>
+      <tr>
+      <td><strong>PMS (Base)</strong></td>
+      <td><strong>(Conceptual layer, not a separate repo deliverable)</strong> · “Δ–Ψ as an axiomatic object”</td>
+      <td><strong>Axiomatic layer</strong></td>
+      <td><strong>Axiomatic</strong></td>
+      <td><em>What is praxis structurally?</em></td>
+      <td>The minimal, irreducible operator set and composition rules; negative space: what is not modeled (values, persons, diagnostics).</td>
+      <td>all (Δ–Ψ)</td>
+      <td>→ all applications inherit constraints from here</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–ANTICIPATION</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong> · <strong>Diagrams (if present)</strong></td>
+      <td>Domain Layer</td>
+      <td><strong>Upstream</strong></td>
+      <td><em>How does praxis remain viable before event and before binding?</em></td>
+      <td>“Future as a structural field” (not prediction): carrying <strong>non-event (Λ)</strong> under <strong>temporality (Θ)</strong> and <strong>asymmetry (Ω)</strong> while preserving <strong>distance (Χ)</strong> and <strong>self-binding (Ψ)</strong> as restraint.</td>
+      <td>Λ Θ Ω Χ Ψ</td>
+      <td>ANTICIPATION → CRITIQUE (openness becomes interruptible)</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–CRITIQUE</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong> · <strong>Addon spec (<code>PMS-CRITIQUE.yaml</code>)</strong> · <strong>Model spec (HTML/PDF)</strong></td>
+      <td>Domain Layer + Application Profile</td>
+      <td><strong>Transition / Hinge</strong></td>
+      <td><em>When does irritation become interruptible—and when does it drift?</em></td>
+      <td>Critique as <strong>χ-stabilized interruption</strong>: how mismatch (Δ) becomes interruptible, how critique mutates (reaction, judgment, narrative reset, silence, exposure), and what is required for correction (<strong>Φ/Σ/Ψ</strong>) under <strong>Ω/Θ</strong> and optional publicness overlay <strong>P</strong>.</td>
+      <td>Δ □ Χ Φ Σ Ψ (plus Λ/Α/Ω/Θ under P)</td>
+      <td>CRITIQUE → CONFLICT (integration collisions)</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–CONFLICT</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong> · <em>(optional: addon profile YAML later)</em></td>
+      <td>Domain Layer</td>
+      <td><strong>Major Knot</strong></td>
+      <td><em>What happens when bindings become structurally incompatible?</em></td>
+      <td>Conflict as <strong>stabilized incompatibility of praxis trajectories</strong>: competing <strong>Σ/Ψ</strong> under shared <strong>Θ</strong>, with <strong>Ω</strong> cost gradients and <strong>Χ</strong> becoming costly or unavailable. Not “resolution,” but legibility of tragic collision and attractor formation.</td>
+      <td>Σ Ψ Ω Θ Χ</td>
+      <td>CONFLICT → tragedy / downstream (governance, evaluation, institutionalization)</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–EDEN</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong> · <strong>Diagrams (PNG)</strong></td>
+      <td>Domain Layer</td>
+      <td><strong>Drift / Cross-axis</strong></td>
+      <td><em>How does praxis drift into comparison and pseudo-symmetry without “fault”?</em></td>
+      <td>Drift trace: frame drift (□) into value/comparison relation, asymmetry becoming status-legible (Ω), <strong>non-event residue (Λ)</strong> and <strong>attractors (Α)</strong> stabilizing pseudo-symmetry while <strong>Σ/Ψ</strong> carriage fails under <strong>Θ</strong>.</td>
+      <td>Δ □ Ω Λ Α Θ (Φ/Σ/Ψ as exit corridors)</td>
+      <td>runs in parallel; often parasitizes CRITIQUE/CONFLICT dynamics</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–SEX</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong> · <em>(optional: diagrams)</em></td>
+      <td>Domain Layer</td>
+      <td><strong>Intimacy / High Ω</strong></td>
+      <td><em>How do impulse and repetition bind under maximal asymmetry and exposure?</em></td>
+      <td>Sexual praxis as a consequence system: scripts (<strong>Α</strong>), cost gradients (<strong>Ω</strong>), trajectory effects (<strong>Θ</strong>), non-events (<strong>Λ</strong>) as steering, and binding thresholds (<strong>Ψ</strong>) under the decisive limiter <strong>Χ</strong> (stop-capability).</td>
+      <td>∇ Ω Θ Λ Α Ψ Χ</td>
+      <td>cross-couples heavily into CONFLICT (binding desync, exit realism)</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–LOGIC</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Example suite (MD/HTML)</strong></td>
+      <td>Domain Layer</td>
+      <td><strong>Boundary / Limit Case</strong></td>
+      <td><em>What remains when justification reaches its structural limit?</em></td>
+      <td>Post-moral effects: responsibility as attributable residue under <strong>Ω/Θ/Λ/Ψ</strong> without generating norms. Logic is treated as indispensable but bounded by non-closure (Λ).</td>
+      <td>Λ Ω Θ Ψ (Σ/Φ as boundary probes)</td>
+      <td>LOGIC → MIP (from description to governance/evaluation)</td>
+      </tr>
+      <tr>
+      <td><strong>PMS–QC</strong></td>
+      <td><strong>Paper (MD/HTML/PDF)</strong> · <strong>Base spec (<code>PMS-QC.yaml</code>)</strong> · <strong>Optional ext (<code>PMS-QC-EXT.yaml</code>)</strong> · <em>(potential code later)</em></td>
+      <td>Domain Bridge / Exploratory Spec Layer</td>
+      <td><strong>Specialized Application (not downstream governance)</strong></td>
+      <td><em>How can PMS function as a structural/context layer for quantum computing?</em></td>
+      <td>Structural correspondence mapping: <strong>□</strong> as workspace/subspace boundary, <strong>Φ</strong> as basis/context change, <strong>Χ</strong> as isolation discipline, <strong>Σ</strong> as commit boundary, <strong>Ω</strong> as control/measurement asymmetry, <strong>Θ</strong> as scheduling/iteration—without replacing QC formalisms.</td>
+      <td>□ Φ Χ Σ Ω Θ (Δ/Λ/Α/Ψ as motifs)</td>
+      <td>PMS → QC mapping; QC-EXT remains optional and non-normative</td>
+      </tr>
+      <tr>
+      <td><strong>MIP / IA (MIPractice)</strong></td>
+      <td><strong>Canonical YAML (case + model reference)</strong> · <strong>Addon YAML (AH Precision)</strong> · <strong>Human specs (HTML/PDF)</strong> · <strong>Examples (YAML/HTML/PDF)</strong> · <strong>Template (HTML)</strong></td>
+      <td>Downstream Application Spec</td>
+      <td><strong>Downstream (Evaluation / Governance)</strong></td>
+      <td><em>How do we apply structural analysis responsibly and harden the analysis artifact?</em></td>
+      <td>Second-order evaluation: ACRPD profiling, IA box, trajectory tracking, zones/guardrails, misuse resistance, and meta-analysis of the analysis artifact (AH). Uses PMS outputs; introduces no new PMS operators.</td>
+      <td>consumes PMS-derived axes + constraints (A/C/R/E/D; Ω/Θ/Χ/Ψ etc.)</td>
+      <td>Application / audit / governance; feeds back into better upstream analysis discipline</td>
+      </tr>
+      </tbody></table>
+      <hr>
+      <h2>2) Practical Stack Map (for navigation and repo management)</h2>
+      <p>The ecosystem is easiest to understand as <strong>three non-mixing strata</strong>:</p>
+      <h3>A) Canonical Grammar (one source of truth)</h3>
+      <p><strong>PMS (Theory / Repo)</strong> is the only place where:</p>
+      <ul>
+      <li>the operator set (Δ–Ψ) is defined,</li>
+      <li>dependencies are canonical,</li>
+      <li>derived axes (A/C/R/E/D) and guardrails are specified as a stable base.</li>
+      </ul>
+      <p>If a question is about “what an operator means,” “which dependencies are valid,” or “what PMS explicitly does not model,” the canonical answer lives here.</p>
+      <h3>B) Domain Layers (operator-strict applications)</h3>
+      <p>These repositories produce <strong>domain legibility</strong> without turning into advice, therapy, discourse ethics, or enforcement.</p>
+      <ul>
+      <li><strong>ANTICIPATION</strong> (before event / before binding)</li>
+      <li><strong>CRITIQUE</strong> (interruptibility before integration; drift under load)</li>
+      <li><strong>CONFLICT</strong> (after binding; incompatibility under Θ/Ω; tragic legibility)</li>
+      <li><strong>EDEN</strong> (comparison drift / pseudo-symmetry regimes)</li>
+      <li><strong>SEX</strong> (intimacy + scripts + binding thresholds)</li>
+      <li><strong>LOGIC</strong> (limits of justification; post-moral residue fields)</li>
+      <li><strong>QC</strong> (specialized domain bridge; structural mapping, not governance)</li>
+      </ul>
+      <p>Each domain layer is a constrained application: it uses PMS “as specified,” adds no new operators, and keeps claims reversible and scene-bound.</p>
+      <h3>C) Downstream Governance / Evaluation (artifact responsibility)</h3>
+      <p><strong>MIP / IA</strong> evaluates whether a produced analysis is:</p>
+      <ul>
+      <li>scope-clean (no drift into diagnosis or person-typing),</li>
+      <li>misuse-resistant (explicit guardrails and “red zone” awareness),</li>
+      <li>structurally grounded (assumptions and limits stated),</li>
+      <li>publishable without coercive drift.</li>
+      </ul>
+      <p>It does not replace PMS and does not compete with the domain layers—it hardens their outputs.</p>
+      <hr>
+      <h2>3) Why the “Primary Deliverables” column matters (operationally)</h2>
+      <p>It prevents two recurring failure modes:</p>
+      <ol>
+      <li><p><strong>Spec drift</strong>
+      When a domain repository quietly starts acting like a grammar repository (redefining operators, smuggling dependencies, inventing “new primitives”).
+      The deliverables column makes “where definitions live” visible at a glance.</p>
+      </li>
+      <li><p><strong>Tooling confusion</strong>
+      People often mix “paper repositories” with “schema/spec repositories.”
+      The deliverables column clarifies which repos ship YAML contracts, templates, code, or only papers and examples—so integrations stay clean.</p>
+      </li>
+      </ol>
+      <hr>
+      <h2>4) Minimal repo discipline checklist (optional but useful)</h2>
+      <p>A lightweight standard that keeps the ecosystem coherent:</p>
+      <ul>
+      <li><p>Every repo states: <strong>“Depends on PMS; does not modify PMS operators.”</strong></p>
+      </li>
+      <li><p>Every repo lists its deliverables explicitly (paper formats, YAML contracts, examples, specs).</p>
+      </li>
+      <li><p>Every domain repo keeps:</p>
+      <ul>
+      <li>the guardrail gate (distance + reversibility + dignity-in-practice),</li>
+      <li>a “What this is not” section,</li>
+      <li>and avoids person-typing, diagnosis, or enforcement language.</li>
+      </ul>
+      </li>
+      <li><p>Only <strong>PMS (Theory / Repo)</strong> contains canonical operator definitions and dependency tables.</p>
+      </li>
+      </ul>
+      <hr>
+      <h2>Conclusion (optional)</h2>
+      <p>The PMS ecosystem is deliberately designed for <strong>density over expansion</strong>:</p>
+      <ul>
+      <li><strong>PMS</strong> stabilizes the grammar and its negative space (what is not modeled).</li>
+      <li>Domain layers carve out a small set of <strong>high-leverage regimes</strong> where structural drift and viability are repeatedly misread in moral or psychological terms.</li>
+      <li><strong>MIP / IA</strong> ensures that applying these models does not collapse into coercion, verdict production, or irreversible exposure.</li>
+      </ul>
+      <p>If you want a single rule of thumb:</p>
+      <blockquote>
+      <p><strong>PMS defines the grammar.
+      Domain layers show how the grammar behaves under specific load regimes.
+      MIP / IA hardens the resulting analysis artifacts for responsible use.</strong></p>
+      </blockquote>
+    </div>
+  </body>
+</html>
