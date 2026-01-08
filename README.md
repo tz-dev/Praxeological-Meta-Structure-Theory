@@ -29,6 +29,10 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 │   ├── figure_04.png
 │   └── figure_05.png
 │
+├── doc/
+│   ├── Global Overview - PMS Layers, Focus, Reach, and Position in the Stack.md
+│   └── Global Overview - PMS Layers, Focus, Reach, and Position in the Stack.pdf
+│
 ├── model/
 │   ├── Model Specification.html              # PMS model specification (HTML)
 │   ├── Model Specification.pdf               # PMS model specification (PDF)
@@ -125,6 +129,29 @@ PMS is not:
 * A machine for automated moral judgement or person-evaluation
 
 All of this is encoded explicitly in `schema_meta.intended_use` and `schema_meta.not_intended_for` in `PMS.yaml`.
+
+---
+
+## 📚 Global Stack Overview
+
+This repository includes a **global ecosystem map** of the PMS stack:
+
+**`doc/Global Overview – PMS Layers, Focus, Reach, and Position in the Stack`**
+
+This document provides a **single navigable reference** for:
+
+* how the canonical PMS grammar (Δ–Ψ) relates to all domain repositories,
+* what each repository is *for* (and what it explicitly is *not*),
+* which artifacts each repo ships (papers, YAML specs, model specs, examples),
+* and how domain layers, bridges, and governance layers are kept non-mixing.
+
+The overview is intended to prevent:
+
+* operator redefinition drift,
+* confusion between theory, application, and governance layers,
+* and accidental misuse of domain models as evaluative or prescriptive tools.
+
+It is a **documentation map**, not a new theory layer, and introduces **no new operators, dependencies, or norms**.
 
 ---
 
@@ -378,6 +405,7 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
 
 
