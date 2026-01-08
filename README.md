@@ -31,7 +31,7 @@ It defines eleven irreducible meta-axioms (Δ–Ψ) and shows how complex struct
 │
 ├── doc/
 │   ├── Global Overview - PMS Layers, Focus, Reach, and Position in the Stack.md
-│   └── Global Overview - PMS Layers, Focus, Reach, and Position in the Stack.pdf
+│   └── Global Overview - PMS Layers, Focus, Reach, and Position in the Stack.html
 │
 ├── model/
 │   ├── Model Specification.html              # PMS model specification (HTML)
@@ -405,6 +405,7 @@ Extensions (e.g., new example operator chains, additional diagrams, integration 
 
 * maintain the structural, non-psychological scope specified in `schema_meta`
 * include proper attribution under **CC BY 4.0**
+
 
 
 
