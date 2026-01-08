@@ -1,9 +1,9 @@
 pms_entry_condition:
   requirement: >
     Any use of PMS presupposes acceptance of distance (Χ), reversibility,
-    and dignity-in-practice (D). This condition applies to application, not
-    to critique or rejection. Applications that suspend these conditions
-    are formally invalid as PMS.
+    and dignity-in-practice (D; a praxeological constraint, not ontological worth).
+    This condition applies to application, not to critique or rejection.
+    Applications that suspend these conditions are formally invalid as PMS.
 schema_version: "PMS_1.1"
 schema_meta:
   model_name: "Praxeological Meta-Structure"
