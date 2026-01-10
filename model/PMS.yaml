@@ -1,3 +1,137 @@
+# =============================================================================
+#  PMS — PRAXEOLOGICAL META-STRUCTURE (CANONICAL BASE SPECIFICATION)
+#
+#  Repository:
+#    https://github.com/tz-dev/Praxeological-Meta-Structure-Theory
+#
+#  File:
+#    PMS.yaml
+#
+#  Schema Version:
+#    PMS_1.1
+#
+#  Status:
+#    canonical (source of truth)
+#
+#  Last Updated:
+#    2026-01-02
+#
+# -----------------------------------------------------------------------------
+#  PURPOSE AND STATUS
+# -----------------------------------------------------------------------------
+#  This document defines the CANONICAL BASE SPECIFICATION of the
+#  Praxeological Meta-Structure (PMS).
+#
+#  PMS is a generative, operator-based meta-model for describing the
+#  structural grammar of praxis. It formalizes how enactment, asymmetry,
+#  temporality, integration, and self-binding arise from a minimal set of
+#  irreducible meta-axioms.
+#
+#  PMS is:
+#    - structural (not phenomenological),
+#    - non-psychological,
+#    - non-clinical,
+#    - non-normative,
+#    - non-prescriptive.
+#
+#  This file is the SOURCE OF TRUTH for:
+#    - the eleven PMS meta-axioms (Δ–Ψ),
+#    - their canonical order and dependency relations,
+#    - derived structural axes (A, C, R, E, D),
+#    - validity constraints and self-binding clauses.
+#
+# -----------------------------------------------------------------------------
+#  SCOPE OF PMS
+# -----------------------------------------------------------------------------
+#  PMS provides:
+#
+#    - a minimal and complete operator grammar (Δ–Ψ),
+#    - a generative account of praxis structures,
+#    - formal dependency hygiene between operators,
+#    - derived axes as compositional results (not new primitives),
+#    - a self-binding validity discipline for its own application.
+#
+#  PMS does NOT provide:
+#
+#    - intervention methods,
+#    - therapeutic or clinical models,
+#    - personality typing,
+#    - moral evaluation or ranking,
+#    - governance, enforcement, or policy guidance.
+#
+# -----------------------------------------------------------------------------
+#  RELATIONSHIP TO DERIVED MODELS AND PAPERS
+# -----------------------------------------------------------------------------
+#  Other documents (e.g. PMS-CONFLICT, PMS-CRITIQUE, PMS-ANTICIPATION,
+#  PMS-EDEN, PMS-SEX, PMS-LOGIC, Maturity-in-Practice) may:
+#
+#    - DEPEND on PMS,
+#    - REFERENCE PMS operators,
+#    - ORGANIZE PMS operators into domain-specific lenses,
+#    - DEFINE overlays or application schemas.
+#
+#  They MUST NOT:
+#
+#    - redefine PMS operators,
+#    - alter operator order or dependencies,
+#    - introduce new meta-axioms,
+#    - modify derived axes,
+#    - override PMS validity constraints.
+#
+#  PMS.yaml remains the canonical base specification against which all
+#  overlays, papers, and applications are read.
+#
+# -----------------------------------------------------------------------------
+#  VALIDITY GATE — PMS ENTRY CONDITION (APPLICATION-ONLY)
+# -----------------------------------------------------------------------------
+#  Any USE of PMS as an APPLICATION presupposes acceptance of the following
+#  structural conditions:
+#
+#    - Χ (Distance):
+#        maintained reflective distance; no fusion into verdict, urgency,
+#        enforcement, or person-level attribution.
+#
+#    - Reversibility:
+#        all structural readings are scene-bound, revisable, and non-final;
+#        no irreversible labels or global person claims.
+#
+#    - D (Dignity-in-Practice):
+#        enacted restraint under asymmetry; no shaming, ranking, humiliation,
+#        or ontological evaluation of persons or groups.
+#
+#  This gate constrains APPLICATION ONLY.
+#  PMS itself may be criticized, rejected, or ignored without satisfying it.
+#
+# -----------------------------------------------------------------------------
+#  SELF-BINDING CLAUSE (NON-NEGOTIABLE)
+# -----------------------------------------------------------------------------
+#  Any application of PMS is itself subject to PMS.
+#
+#  Analyses that suspend Distance (Χ), Self-Binding discipline (Ψ), or
+#  Dignity-in-Practice (D) in order to enforce truth, clarity, authority,
+#  resolution, or action are formally INVALID as PMS applications —
+#  even if PMS terminology is retained.
+#
+#  PMS can be misapplied, misunderstood, or rejected.
+#  It can only be structurally betrayed by adherents who keep its language
+#  while abandoning its self-binding requirements.
+#
+# -----------------------------------------------------------------------------
+#  ONTOLOGICAL AND NORMATIVE POSITION (CLARIFICATION)
+# -----------------------------------------------------------------------------
+#  PMS:
+#    - makes no claims about consciousness or qualia,
+#    - does not describe inner experience or mental states,
+#    - does not assign moral worth or ontological dignity,
+#    - treats tragedy as structurally possible under maturity.
+#
+#  Dignity-in-Practice (D) is a praxeological constraint on handling asymmetry,
+#  not a metaphysical or moral ranking of beings.
+#
+#  Structural maturity does not eliminate tragedy.
+#
+# =============================================================================
+
 pms_entry_condition:
   requirement: >
     Any use of PMS presupposes acceptance of distance (Χ), reversibility,
@@ -511,3 +645,4 @@ ai_interface_pms:
     - "Which asymmetries (Ω) and temporal trajectories (Θ) are visible?"
     - "Where do recontextualization (Φ), distance (Χ) and integration (Σ) appear or fail?"
     - "How would this configuration project onto the derived axes (Awareness, Coherence, Responsibility, Action, Dignity-in-Practice)?"
+
